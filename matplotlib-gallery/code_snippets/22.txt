@@ -1,0 +1,9 @@
+# NOTE: Please import relevant libraries (e.g., import matplotlib.pyplot as plt, import numpy as np) before running this snippet.
+
+subjects2 = ["A","B","C","D","E"]
+values = np.random.randint(10,100,5)
+
+plt.figure()
+plt.bar(subjects2, values, color="cyan")
+plt.title("Bar Variation 1")
+plt.show()

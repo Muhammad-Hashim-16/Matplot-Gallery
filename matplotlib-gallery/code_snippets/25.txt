@@ -1,0 +1,8 @@
+# NOTE: Please import relevant libraries (e.g., import matplotlib.pyplot as plt, import numpy as np) before running this snippet.
+
+data2 = np.random.randn(300)
+
+plt.figure()
+plt.hist(data2, bins=10, color="red", density=True)
+plt.title("Histogram Density")
+plt.show()

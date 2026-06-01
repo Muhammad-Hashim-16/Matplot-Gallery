@@ -1,0 +1,14 @@
+# NOTE: Please import relevant libraries (e.g., import matplotlib.pyplot as plt, import numpy as np) before running this snippet.
+
+x = np.linspace(0, 10, 100)
+y3 = x**2 / 10
+
+plt.figure(figsize=(8,5))
+plt.plot(x, y3, color="purple")
+plt.xlim(0, 10)
+plt.ylim(0, 15)
+plt.xticks([0,2,4,6,8,10])
+plt.yticks([0,5,10,15])
+plt.title("Axis Control Example")
+plt.grid(True)
+plt.show()

@@ -1,0 +1,15 @@
+# NOTE: Please import relevant libraries (e.g., import matplotlib.pyplot as plt, import numpy as np) before running this snippet.
+
+x = np.linspace(-5, 5, 100)
+y = np.linspace(-5, 5, 100)
+X, Y = np.meshgrid(x, y)
+Z = np.cos(X) * np.sin(Y)
+
+plt.figure()
+plt.contourf(X, Y, Z, levels=20, cmap="coolwarm")
+plt.colorbar()
+plt.title("Filled Contour Plot")
+plt.show()
+
+
+# HEATMAP (imshow style)

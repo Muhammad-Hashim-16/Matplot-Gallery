@@ -1,0 +1,8 @@
+# NOTE: Please import relevant libraries (e.g., import matplotlib.pyplot as plt, import numpy as np) before running this snippet.
+
+plt.figure()
+plt.bar(["A","B"], [1,2])
+plt.title("End Bar")
+plt.show()
+
+# 3D LINE PLOT

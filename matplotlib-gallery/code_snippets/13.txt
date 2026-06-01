@@ -1,0 +1,13 @@
+# NOTE: Please import relevant libraries (e.g., import matplotlib.pyplot as plt, import numpy as np) before running this snippet.
+
+x = np.arange(1, 6)                 
+y1 = np.array([10, 20, 15, 25, 30])
+plt.figure()
+plt.plot(x, y1, marker='o')
+plt.title("Simple Line Plot")
+plt.xlabel("X values")
+plt.ylabel("Y values")
+
+plt.grid(True)
+
+plt.show()

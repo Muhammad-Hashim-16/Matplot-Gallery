@@ -1,0 +1,13 @@
+# NOTE: Please import relevant libraries (e.g., import matplotlib.pyplot as plt, import numpy as np) before running this snippet.
+
+time = np.arange(0, 100)
+signal = np.sin(time * 0.2) + np.random.randn(100) * 0.1
+
+plt.figure()
+plt.plot(time, signal)
+plt.title("Noisy Time Series")
+plt.grid(True)
+plt.show()
+
+
+# SMOOTHING USING MOVING AVERAGE

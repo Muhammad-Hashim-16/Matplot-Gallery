@@ -1,0 +1,29 @@
+# NOTE: Please import relevant libraries (e.g., import matplotlib.pyplot as plt, import numpy as np) before running this snippet.
+
+# DUAL AXIS PLOT
+
+x = np.arange(1,13)
+
+temperature = np.random.randint(20,40,12)
+rainfall = np.random.randint(50,200,12)
+
+fig, ax1 = plt.subplots(figsize=(12,5))
+
+ax1.plot(x,
+         temperature,
+         color='red',
+         marker='o')
+
+ax1.set_ylabel("Temperature", color='red')
+
+ax2 = ax1.twinx()
+
+ax2.bar(x,
+        rainfall,
+        alpha=0.3)
+
+ax2.set_ylabel("Rainfall")
+
+plt.title("Temperature vs Rainfall")
+
+plt.show()

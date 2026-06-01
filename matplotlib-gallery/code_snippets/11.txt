@@ -1,0 +1,10 @@
+# NOTE: Please import relevant libraries (e.g., import matplotlib.pyplot as plt, import numpy as np) before running this snippet.
+
+x = np.random.randn(100)
+y = np.random.randn(100)
+
+plt.figure()
+plt.hexbin(x, y, gridsize=15, cmap="cool")
+plt.colorbar()
+plt.title("Hexbin Plot")
+plt.show()

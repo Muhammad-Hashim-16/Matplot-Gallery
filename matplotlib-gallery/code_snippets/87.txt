@@ -1,0 +1,17 @@
+# NOTE: Please import relevant libraries (e.g., import matplotlib.pyplot as plt, import numpy as np) before running this snippet.
+
+# STREAM PLOT
+
+Y, X = np.mgrid[-3:3:100j,
+                -3:3:100j]
+
+U = -1 - X**2 + Y
+V = 1 + X - Y**2
+
+plt.figure(figsize=(8,8))
+
+plt.streamplot(X, Y, U, V)
+
+plt.title("Stream Plot")
+
+plt.show()

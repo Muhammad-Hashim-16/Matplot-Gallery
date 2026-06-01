@@ -1,0 +1,13 @@
+# NOTE: Please import relevant libraries (e.g., import matplotlib.pyplot as plt, import numpy as np) before running this snippet.
+
+x = np.arange(0, 10)
+y = x ** 2
+
+plt.figure()
+plt.step(x, y, where="mid")
+plt.title("Step Plot")
+plt.grid(True)
+plt.show()
+
+
+# STACKED BAR PLOT

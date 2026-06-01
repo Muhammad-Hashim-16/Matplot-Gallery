@@ -1,0 +1,15 @@
+# NOTE: Please import relevant libraries (e.g., import matplotlib.pyplot as plt, import numpy as np) before running this snippet.
+
+x = ["A", "B", "C", "D"]
+y1 = np.array([1, 2, 3, 4])
+y2 = np.array([2, 1, 2, 1])
+
+plt.figure()
+plt.bar(x, y1, label="Group 1")
+plt.bar(x, y2, bottom=y1, label="Group 2")
+plt.legend()
+plt.title("Stacked Bar Plot")
+plt.show()
+
+
+# MULTI LINE DASH STYLE

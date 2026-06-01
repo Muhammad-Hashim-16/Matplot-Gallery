@@ -1,0 +1,12 @@
+# NOTE: Please import relevant libraries (e.g., import matplotlib.pyplot as plt, import numpy as np) before running this snippet.
+
+data2 = np.random.randn(20, 20)
+
+plt.figure()
+plt.imshow(data2, cmap="coolwarm")
+plt.colorbar()
+plt.title("Heatmap Variation 2")
+plt.show()
+
+
+# BOX PLOT (via matplotlib)

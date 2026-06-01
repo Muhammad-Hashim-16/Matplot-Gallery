@@ -1,0 +1,9 @@
+# NOTE: Please import relevant libraries (e.g., import matplotlib.pyplot as plt, import numpy as np) before running this snippet.
+
+sizes = [40, 30, 20, 10]
+labels = ["A", "B", "C", "D"]
+explode = [0, 0.1, 0, 0]
+plt.figure(figsize=(6,6), dpi=120)
+plt.pie(sizes, labels=labels, autopct="%1.1f%%", explode=explode, shadow=True, startangle=90)
+plt.title("Pie Chart Example")
+plt.show()

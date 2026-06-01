@@ -1,0 +1,22 @@
+# NOTE: Please import relevant libraries (e.g., import matplotlib.pyplot as plt, import numpy as np) before running this snippet.
+
+# CORRELATION SCATTER
+
+study_hours = np.random.randint(1,10,100)
+
+marks = study_hours * 10 + np.random.randn(100)*5
+
+plt.figure(figsize=(10,5))
+
+plt.scatter(study_hours,
+            marks,
+            alpha=0.7)
+
+plt.title("Study Hours vs Marks")
+
+plt.xlabel("Study Hours")
+plt.ylabel("Marks")
+
+plt.grid(True)
+
+plt.show()

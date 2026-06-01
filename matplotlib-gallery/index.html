@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <script>
+        (function() {
+            const theme = localStorage.getItem('matplotgallery-theme') || 'dark';
+            document.documentElement.setAttribute('data-theme', theme);
+        })();
+    </script>
+    <!-- Meta Tags for SEO & Responsiveness -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#6366f1">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="MatplotGallery — Python Matplotlib Plots">
+    <meta property="og:description" content="A curated collection of matplotlib visualizations from beginner to advanced — with full source code.">
+    <meta property="og:type" content="website">
+
+    <title>MatplotGallery — Python Matplotlib Plots</title>
+
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json">
+
+    <!-- Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Google Fonts: Inter and JetBrains Mono -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+
+    <!-- Highlight.js and VS Code Theme -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/vs2015.min.css">
+
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="style.css?v=2">
+</head>
+<body>
+    <!-- MatplotGallery | A matplotlib visualization gallery | Python 3.14 | [ACTION]: Add your name here -->
+    <!-- Top Navigation Bar -->
+    <header id="navbar">
+        <div class="navbar-container">
+            <!-- Logo Section -->
+            <div class="logo-area">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="logo-icon">
+                    <line x1="18" y1="20" x2="18" y2="10"></line>
+                    <line x1="12" y1="20" x2="12" y2="4"></line>
+                    <line x1="6" y1="20" x2="6" y2="14"></line>
+                </svg>
+                <span class="logo-text">MatplotGallery</span>
+            </div>
+
+            <!-- Navigation Links and Controls -->
+            <nav class="nav-controls">
+                <a href="about.html" class="nav-link" aria-label="About MatplotGallery">
+                    <span class="nav-text">About</span>
+                </a>
+                <button id="nav-search-btn" class="icon-btn" aria-label="Open Search">
+                    <i data-lucide="search"></i>
+                </button>
+                <!-- ADD YOUR GITHUB URL HERE -->
+                <a href="https://github.com/Muhammad-Hashim-16" target="_blank" rel="noopener noreferrer" class="icon-btn" aria-label="GitHub Repository">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.2c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                </a>
+                <button id="theme-toggle-btn" class="icon-btn" aria-label="Toggle Dark/Light Theme">
+                    <!-- Icon will be toggled by JS between moon and sun -->
+                    <i data-lucide="moon"></i>
+                </button>
+            </nav>
+        </div>
+        <!-- Scroll Progress Bar -->
+        <div id="scroll-progress"></div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main>
+        <!-- Hero Section -->
+        <section id="hero">
+            <div class="hero-content">
+                <div class="hero-badge">Python 3.14 · Matplotlib</div>
+                <h1 class="hero-title">Matplotlib Plot Gallery</h1>
+                <p class="hero-subtitle">A curated collection of matplotlib visualizations from beginner to advanced — with full source code.</p>
+                
+                <!-- Dynamic Stats Bar -->
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span id="stat-plots-count" class="stat-number">0</span>
+                        <span class="stat-label">Plots</span>
+                    </div>
+                    <div class="stat-item">
+                        <span id="stat-difficulty-levels" class="stat-number">3</span>
+                        <span class="stat-label">Difficulty Levels</span>
+                    </div>
+                    <div class="stat-item">
+                        <span id="stat-chart-types" class="stat-number">0</span>
+                        <span class="stat-label">Chart Types</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Search and Filter Controls -->
+        <section id="controls">
+            <div class="controls-container">
+                <!-- Search Bar -->
+                <div class="search-wrapper">
+                    <i data-lucide="search" class="search-icon"></i>
+                    <input type="text" id="search-input" placeholder="Search plots... try 'scatter', '3D', 'histogram'" aria-label="Search plots">
+                    <button id="clear-search-btn" class="icon-btn clear-btn hidden" aria-label="Clear Search">
+                        <i data-lucide="x"></i>
+                    </button>
+                    <span class="search-shortcut">/</span>
+                </div>
+
+                <!-- Filter Pills/Chips -->
+                <div class="filter-scroll-container">
+                    <div id="filter-pills" class="filter-pills">
+                        <!-- 'All' pill is static, rest generated dynamically by JS -->
+                        <button class="filter-pill active" data-filter="all">All</button>
+                        
+                        <!-- Difficulty filters will be generated here -->
+                        
+                        <div class="filter-divider"></div>
+                        
+                        <!-- Chart type tag filters will be generated here -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Results Info and Sorting -->
+        <div id="results-info">
+            <div class="results-text" id="results-count-text">Showing 0 of 0 plots</div>
+        </div>
+
+        <!-- Plots Grid Area -->
+        <div id="plots-grid-container">
+            <!-- Loading Skeletons (Shown before data.json loads) -->
+            <div id="loading-skeletons" class="plots-grid">
+                <!-- 9 Skeleton Cards -->
+                <article class="plot-card skeleton"></article>
+                <article class="plot-card skeleton"></article>
+                <article class="plot-card skeleton"></article>
+                <article class="plot-card skeleton"></article>
+                <article class="plot-card skeleton"></article>
+                <article class="plot-card skeleton"></article>
+                <article class="plot-card skeleton"></article>
+                <article class="plot-card skeleton"></article>
+                <article class="plot-card skeleton"></article>
+            </div>
+
+            <!-- Actual Plots Grid (Populated by JS) -->
+            <div id="plots-grid" class="plots-grid hidden">
+                <!-- Cards go here dynamically -->
+            </div>
+
+            <!-- Empty State (Shown when search/filter returns no results) -->
+            <div id="empty-state" class="hidden">
+                <i data-lucide="search-x" class="empty-icon"></i>
+                <p class="empty-text">No plots found. Try a different search term or clear filters.</p>
+                <button id="reset-filters-btn" class="reset-btn">Reset Filters</button>
+            </div>
+        </div>
+    </main>
+
+    <div id="install-banner">
+        <span>Install MatplotGallery as an app for faster access</span>
+        <div style="display: flex; gap: 8px;">
+            <button id="pwa-install-btn" class="primary-btn" style="padding: 6px 12px; font-size: var(--text-sm);">Install</button>
+            <button id="pwa-dismiss-btn" style="padding: 6px 12px; background: transparent; border: none; color: var(--text-muted); cursor: pointer; font-size: var(--text-sm);">Dismiss</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div>
+                <div class="footer-logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="logo-icon"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+                    MatplotGallery
+                </div>
+                <div class="footer-tagline">A matplotlib visualization gallery built with Python 3.14</div>
+            </div>
+            <div class="footer-links">
+                <a href="about.html" class="footer-link">About</a>
+                <a href="https://github.com/Muhammad-Hashim-16" class="footer-link">GitHub</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>&copy; 2026 Muhammad Hashim</span>
+            <span>Built with Python and Matplotlib</span>
+        </div>
+    </footer>
+
+    <!-- Plot Detail Modal Overlay -->
+    <div id="modal-overlay" class="hidden" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-plot-name">
+        <div id="modal">
+            <div id="modal-header">
+                <div id="modal-title-area">
+                    <span id="modal-plot-number"></span>
+                    <h2 id="modal-plot-name"></h2>
+                    <span id="modal-difficulty-badge" class="difficulty-badge"></span>
+                </div>
+                <button id="modal-close-btn" class="icon-btn" aria-label="Close Modal">
+                    <i data-lucide="x"></i>
+                </button>
+            </div>
+            <div id="modal-body">
+                <div id="modal-image-section">
+                    <img id="modal-image" src="" alt="Plot visualization" />
+                </div>
+                <div id="modal-code-section">
+                    <div id="code-header">
+                        <span class="code-lang-label">Python 3.14 · Matplotlib</span>
+                        <button id="copy-code-btn" class="copy-btn" aria-label="Copy code to clipboard">
+                            <i data-lucide="copy"></i> Copy Code
+                        </button>
+                    </div>
+                    <pre><code id="modal-code" class="language-python"></code></pre>
+                </div>
+            </div>
+            <div id="modal-footer">
+                <div id="modal-tags" class="card-tags">
+                    <!-- Tags populated dynamically -->
+                </div>
+                <div id="modal-navigation">
+                    <button id="prev-plot-btn" class="nav-btn" aria-label="Previous Plot">
+                        <i data-lucide="arrow-left"></i> Previous
+                    </button>
+                    <span id="modal-counter"></span>
+                    <button id="next-plot-btn" class="nav-btn" aria-label="Next Plot">
+                        Next <i data-lucide="arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <button id="scroll-top-btn" class="icon-btn hidden" aria-label="Scroll to top">
+        <i data-lucide="arrow-up"></i>
+    </button>
+
+    <!-- Toast Notification for Copy Action -->
+    <div id="toast" class="hidden" role="alert" aria-live="polite">
+        <i data-lucide="check-circle"></i> Code copied to clipboard!
+    </div>
+
+    <!-- Scripts (Load Order is Important) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="search.js?v=2"></script>
+    <script src="app.js?v=2"></script>
+
+    <!-- Initialize Lucide Icons -->
+    <script>
+        lucide.createIcons();
+    </script>
+
+    <!-- Register Service Worker for PWA -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('./sw.js')
+                    .then(reg => console.log('SW registered successfully:', reg.scope))
+                    .catch(err => console.log('SW registration failed:', err));
+            });
+        }
+    </script>
+</body>
+</html>

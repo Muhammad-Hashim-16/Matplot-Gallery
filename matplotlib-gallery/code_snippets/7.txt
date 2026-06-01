@@ -1,0 +1,17 @@
+# NOTE: Please import relevant libraries (e.g., import matplotlib.pyplot as plt, import numpy as np) before running this snippet.
+
+x = np.linspace(0, 10, 100)
+y1 = np.sin(x)
+subjects = ["Math", "CS", "Physics", "English", "Chem"]
+marks = [95, 88, 92, 85, 90]
+
+plt.figure(figsize=(10,4), dpi=120)
+plt.subplot(1,2,1)
+plt.plot(x, y1, color="red")
+plt.title("Sin Plot")
+plt.grid(True)
+plt.subplot(1,2,2)
+plt.bar(subjects, marks, color="green")
+plt.title("Bar Plot")
+plt.grid(True, axis="y")
+plt.show()

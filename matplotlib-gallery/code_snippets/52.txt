@@ -1,0 +1,12 @@
+# NOTE: Please import relevant libraries (e.g., import matplotlib.pyplot as plt, import numpy as np) before running this snippet.
+
+x = np.arange(0, 20)
+y = np.random.randint(1, 10, 20)
+
+plt.figure()
+plt.stem(x, y, linefmt="g-", markerfmt="go", basefmt="r-")
+plt.title("Stem Plot Advanced")
+plt.show()
+
+
+# STEP PLOT

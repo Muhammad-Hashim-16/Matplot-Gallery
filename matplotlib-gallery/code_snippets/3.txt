@@ -1,0 +1,12 @@
+# NOTE: Please import relevant libraries (e.g., import matplotlib.pyplot as plt, import numpy as np) before running this snippet.
+
+subjects = ["Math", "CS", "Physics", "English", "Chem"]
+marks = [95, 88, 92, 85, 90]
+plt.figure(figsize=(8,5), dpi=120)
+plt.bar(subjects, marks, color="orange", edgecolor="black", width=0.6)
+plt.title("Marks Comparison")
+plt.xlabel("Subjects")
+plt.ylabel("Marks")
+plt.ylim(0, 100)
+plt.grid(axis="y", linestyle="--", alpha=0.5)
+plt.show()

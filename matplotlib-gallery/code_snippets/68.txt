@@ -1,0 +1,17 @@
+# NOTE: Please import relevant libraries (e.g., import matplotlib.pyplot as plt, import numpy as np) before running this snippet.
+
+# FINANCIAL STOCK PRICE VISUALIZATION
+
+
+days = np.arange(1, 101)
+prices = np.cumsum(np.random.randn(100) * 2 + 0.5) + 100
+
+plt.figure(figsize=(12,5))
+plt.plot(days, prices, color='blue', linewidth=2)
+plt.fill_between(days, prices, alpha=0.2)
+
+plt.title("Stock Price Simulation")
+plt.xlabel("Day")
+plt.ylabel("Price")
+plt.grid(True)
+plt.show()

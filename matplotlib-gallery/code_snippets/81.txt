@@ -1,0 +1,23 @@
+# NOTE: Please import relevant libraries (e.g., import matplotlib.pyplot as plt, import numpy as np) before running this snippet.
+
+# REGRESSION STYLE VISUALIZATION
+
+study_hours = np.random.randint(1,10,100)
+marks = study_hours * 10 + np.random.randn(100)*5
+
+m, b = np.polyfit(study_hours, marks, 1)
+
+plt.figure(figsize=(10,5))
+
+plt.scatter(study_hours, marks)
+
+plt.plot(study_hours,
+         m*study_hours+b,
+         color='red',
+         linewidth=3)
+
+plt.title("Regression Line")
+
+plt.grid(True)
+
+plt.show()

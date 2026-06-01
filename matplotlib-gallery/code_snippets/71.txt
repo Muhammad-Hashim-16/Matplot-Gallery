@@ -1,0 +1,21 @@
+# NOTE: Please import relevant libraries (e.g., import matplotlib.pyplot as plt, import numpy as np) before running this snippet.
+
+# AREA PLOT
+
+x = np.arange(1,11)
+y = np.random.randint(5,20,10)
+
+plt.figure(figsize=(10,5))
+
+plt.fill_between(x, y,
+                 color='green',
+                 alpha=0.4)
+
+plt.plot(x, y, color='green')
+
+plt.title("Area Plot")
+plt.xlabel("X")
+plt.ylabel("Y")
+
+plt.grid(True)
+plt.show()

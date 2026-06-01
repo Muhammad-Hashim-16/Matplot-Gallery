@@ -1,0 +1,14 @@
+# NOTE: Please import relevant libraries (e.g., import matplotlib.pyplot as plt, import numpy as np) before running this snippet.
+
+x = np.random.randn(200)
+y = np.random.randn(200)
+groups = np.random.randint(0, 3, 200)
+
+plt.figure()
+plt.scatter(x, y, c=groups, cmap="rainbow")
+plt.title("Cluster Scatter")
+plt.colorbar()
+plt.show()
+
+
+# TIME SERIES STYLE PLOT

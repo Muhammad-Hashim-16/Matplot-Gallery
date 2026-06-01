@@ -1,0 +1,15 @@
+# NOTE: Please import relevant libraries (e.g., import matplotlib.pyplot as plt, import numpy as np) before running this snippet.
+
+plt.figure(figsize=(8,5), dpi=120)
+np.random.seed(0)
+x_sc = np.random.rand(50)*10
+y_sc = np.random.rand(50)*10
+colors = np.random.rand(50)
+sizes = np.random.rand(50)*200
+plt.scatter(x_sc, y_sc, c=colors, s=sizes, alpha=0.6, marker="*", cmap="viridis")
+plt.title("Scatter Plot Advanced")
+plt.xlabel("X")
+plt.ylabel("Y")
+plt.colorbar()
+plt.grid(True)
+plt.show()

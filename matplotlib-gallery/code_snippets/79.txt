@@ -1,0 +1,50 @@
+# NOTE: Please import relevant libraries (e.g., import matplotlib.pyplot as plt, import numpy as np) before running this snippet.
+
+# REALISTIC SALES DASHBOARD
+
+fig = plt.figure(figsize=(14,8))
+
+# Sales trend
+plt.subplot(2,2,1)
+
+months = ['Jan','Feb','Mar','Apr','May','Jun']
+sales = [120,150,170,160,210,250]
+
+plt.plot(months, sales, marker='o')
+
+plt.title("Monthly Sales")
+
+# Revenue bar
+plt.subplot(2,2,2)
+
+revenue = [12,14,18,16,22,25]
+
+plt.bar(months, revenue)
+
+plt.title("Revenue")
+
+# Pie chart
+plt.subplot(2,2,3)
+
+regions = ['Asia','Europe','USA']
+
+sizes = [45,30,25]
+
+plt.pie(sizes,
+        labels=regions,
+        autopct='%1.1f%%')
+
+plt.title("Regional Share")
+
+# Histogram
+plt.subplot(2,2,4)
+
+customers = np.random.normal(100,20,200)
+
+plt.hist(customers, bins=20)
+
+plt.title("Customer Distribution")
+
+plt.tight_layout()
+
+plt.show()

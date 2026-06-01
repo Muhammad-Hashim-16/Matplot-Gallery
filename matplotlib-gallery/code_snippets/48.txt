@@ -1,0 +1,12 @@
+# NOTE: Please import relevant libraries (e.g., import matplotlib.pyplot as plt, import numpy as np) before running this snippet.
+
+data = np.random.rand(10, 10)
+
+plt.figure()
+plt.imshow(data, cmap="hot", interpolation="nearest")
+plt.colorbar()
+plt.title("Heatmap")
+plt.show()
+
+
+# MULTIPLE HEATMAP VARIATIONS

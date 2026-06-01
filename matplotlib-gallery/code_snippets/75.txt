@@ -1,0 +1,23 @@
+# NOTE: Please import relevant libraries (e.g., import matplotlib.pyplot as plt, import numpy as np) before running this snippet.
+
+# RADAR CHART
+
+categories = ['Python','C++','Java','SQL','AI']
+values = [90,80,70,75,95]
+
+values += values[:1]
+
+angles = np.linspace(0, 2*np.pi, len(values), endpoint=True)
+
+fig = plt.figure(figsize=(7,7))
+ax = plt.subplot(111, polar=True)
+
+ax.plot(angles, values)
+ax.fill(angles, values, alpha=0.3)
+
+ax.set_xticks(angles[:-1])
+ax.set_xticklabels(categories)
+
+plt.title("Skill Radar Chart")
+
+plt.show()

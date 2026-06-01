@@ -1,0 +1,20 @@
+# NOTE: Please import relevant libraries (e.g., import matplotlib.pyplot as plt, import numpy as np) before running this snippet.
+
+# MOVING AVERAGE ANALYSIS
+
+days = np.arange(1, 101)
+prices = np.cumsum(np.random.randn(100) * 2 + 0.5) + 100
+
+window = 10
+moving_avg = np.convolve(prices, np.ones(window)/window, mode='valid')
+
+plt.figure(figsize=(12,5))
+plt.plot(days, prices, label="Original")
+plt.plot(days[window-1:], moving_avg,
+         linewidth=3,
+         label="Moving Average")
+
+plt.legend()
+plt.title("Moving Average Trend")
+plt.grid(True)
+plt.show()

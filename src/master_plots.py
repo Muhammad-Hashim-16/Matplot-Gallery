@@ -1,0 +1,1429 @@
+import matplotlib.pyplot as plt
+import numpy as np
+from matplotlib.animation import FuncAnimation
+from mpl_toolkits.mplot3d import Axes3D
+
+# Comprehensive Matplotlib Demo Script
+# Purpose: Advanced plotting examples
+
+x = np.linspace(0, 10, 100)
+y1 = np.sin(x)
+y2 = np.cos(x)
+y3 = x**2 / 10
+y4 = np.log1p(x)
+
+# 1
+x = np.linspace(0, 10, 100)
+y1 = np.sin(x)
+y2 = np.cos(x)
+
+plt.figure(figsize=(10,6), dpi=120)
+plt.plot(x, y1, color="red", linestyle="-", linewidth=2, marker="o", markersize=3, label="sin(x)")
+plt.plot(x, y2, color="blue", linestyle="--", linewidth=2, marker="s", markersize=3, label="cos(x)")
+plt.title("Line Plot: sin and cos")
+plt.xlabel("X axis")
+plt.ylabel("Y axis")
+plt.grid(True, linestyle="--", alpha=0.5)
+plt.legend()
+plt.show()
+
+# 2
+plt.figure(figsize=(8,5), dpi=120)
+np.random.seed(0)
+x_sc = np.random.rand(50)*10
+y_sc = np.random.rand(50)*10
+colors = np.random.rand(50)
+sizes = np.random.rand(50)*200
+plt.scatter(x_sc, y_sc, c=colors, s=sizes, alpha=0.6, marker="*", cmap="viridis")
+plt.title("Scatter Plot Advanced")
+plt.xlabel("X")
+plt.ylabel("Y")
+plt.colorbar()
+plt.grid(True)
+plt.show()
+
+# 3
+subjects = ["Math", "CS", "Physics", "English", "Chem"]
+marks = [95, 88, 92, 85, 90]
+plt.figure(figsize=(8,5), dpi=120)
+plt.bar(subjects, marks, color="orange", edgecolor="black", width=0.6)
+plt.title("Marks Comparison")
+plt.xlabel("Subjects")
+plt.ylabel("Marks")
+plt.ylim(0, 100)
+plt.grid(axis="y", linestyle="--", alpha=0.5)
+plt.show()
+
+# 4
+data = np.random.normal(50, 15, 500)
+plt.figure(figsize=(8,5), dpi=120)
+plt.hist(data, bins=20, color="skyblue", edgecolor="black", density=True)
+plt.title("Histogram of Normal Distribution")
+plt.xlabel("Value")
+plt.ylabel("Density")
+plt.grid(True, linestyle="--", alpha=0.5)
+plt.show()
+
+# 5
+sizes = [40, 30, 20, 10]
+labels = ["A", "B", "C", "D"]
+explode = [0, 0.1, 0, 0]
+plt.figure(figsize=(6,6), dpi=120)
+plt.pie(sizes, labels=labels, autopct="%1.1f%%", explode=explode, shadow=True, startangle=90)
+plt.title("Pie Chart Example")
+plt.show()
+
+# 6
+x = np.linspace(0, 10, 100)
+y1 = np.sin(x)
+
+plt.figure(figsize=(10,4), dpi=120)
+plt.subplot(1,2,1)
+plt.plot(x, y1, color="red")
+plt.title("Sin Plot")
+plt.grid(True)
+plt.show()
+
+# 7
+x = np.linspace(0, 10, 100)
+y1 = np.sin(x)
+subjects = ["Math", "CS", "Physics", "English", "Chem"]
+marks = [95, 88, 92, 85, 90]
+
+plt.figure(figsize=(10,4), dpi=120)
+plt.subplot(1,2,1)
+plt.plot(x, y1, color="red")
+plt.title("Sin Plot")
+plt.grid(True)
+plt.subplot(1,2,2)
+plt.bar(subjects, marks, color="green")
+plt.title("Bar Plot")
+plt.grid(True, axis="y")
+plt.show()
+
+# 8
+x = np.linspace(0, 10, 100)
+y3 = x**2 / 10
+
+plt.figure(figsize=(8,5))
+plt.plot(x, y3, color="purple")
+plt.xlim(0, 10)
+plt.ylim(0, 15)
+plt.xticks([0,2,4,6,8,10])
+plt.yticks([0,5,10,15])
+plt.title("Axis Control Example")
+plt.grid(True)
+plt.show()
+
+# 9
+x = np.linspace(0, 10, 200)
+y = np.sin(x) * np.exp(-x/5)
+
+plt.figure(figsize=(9,5), dpi=120)
+plt.plot(x, y, color="black", linewidth=2, label="Damped sine")
+plt.fill_between(x, y, color="gray", alpha=0.3)
+plt.title("Area Under Curve Concept")
+plt.legend()
+plt.grid(True)
+plt.show()
+
+# 10
+x = np.arange(1, 11)
+y = x**2
+
+plt.figure()
+plt.stem(x, y)
+plt.title("Stem Plot Example")
+plt.grid(True)
+plt.show()
+
+# 11
+x = np.random.randn(100)
+y = np.random.randn(100)
+
+plt.figure()
+plt.hexbin(x, y, gridsize=15, cmap="cool")
+plt.colorbar()
+plt.title("Hexbin Plot")
+plt.show()
+
+# 12
+x = np.linspace(0, 10, 100)
+y = np.sin(x)
+
+plt.figure(figsize=(10,6))
+plt.plot(x, y, label="sin", color="red")
+plt.plot(x, np.cos(x), label="cos", color="blue")
+plt.axhline(0, color="black", linewidth=1)
+plt.axvline(5, color="green", linestyle="--")
+plt.annotate("Peak", xy=(1.5, 1), xytext=(3, 1.5),
+             arrowprops=dict(facecolor="black"))
+plt.legend()
+plt.title("Annotations Example")
+plt.grid(True)
+plt.show()
+
+# 13
+x = np.arange(1, 6)                 
+y1 = np.array([10, 20, 15, 25, 30])
+plt.figure()
+plt.plot(x, y1, marker='o')
+plt.title("Simple Line Plot")
+plt.xlabel("X values")
+plt.ylabel("Y values")
+
+plt.grid(True)
+
+plt.show()
+
+# 14
+x = np.arange(1, 6)
+y1 = np.array([10, 20, 15, 25, 30])
+x_sc = np.random.rand(50)*10
+y_sc = np.random.rand(50)*10
+subjects = ["Math", "CS", "Physics", "English", "Chem"]
+marks = [95, 88, 92, 85, 90]
+data = np.random.normal(50, 15, 500)
+
+fig = plt.figure(figsize=(10,8))
+plt.subplot(2,2,1)
+plt.plot(x, y1)
+plt.title("A")
+
+plt.subplot(2,2,2)
+plt.scatter(x_sc, y_sc)
+plt.title("B")
+
+plt.subplot(2,2,3)
+plt.bar(subjects, marks)
+plt.title("C")
+
+plt.subplot(2,2,4)
+plt.hist(data)
+plt.title("D")
+
+plt.show()
+
+# 15
+steps = np.random.choice([-1,1], size=200)
+walk = np.cumsum(steps)
+
+plt.figure(figsize=(9,4))
+plt.plot(walk)
+plt.title("Random Walk")
+plt.grid(True)
+plt.show()
+
+# 16
+x = np.linspace(0, 10, 100)
+plt.figure()
+plt.plot(x, np.sin(x), label="sin")
+plt.plot(x, np.sin(2*x), label="sin(2x)")
+plt.plot(x, np.sin(3*x), label="sin(3x)")
+plt.legend()
+plt.title("Frequency Comparison")
+plt.grid(True)
+plt.show()
+
+# 17
+x = np.linspace(0, 5, 100)
+y = np.exp(x)
+
+plt.figure()
+plt.plot(x, y)
+plt.yscale("log")
+plt.title("Log Scale Example")
+plt.grid(True)
+plt.show()
+
+# 18
+x = np.linspace(0, 10, 100)
+plt.figure(figsize=(8,4))
+plt.plot(x, np.sin(x), linestyle="-", marker="o")
+plt.title("Marker Experiment 1")
+plt.show()
+
+# 19
+x = np.linspace(0, 10, 100)
+
+plt.figure(figsize=(8,4))
+plt.plot(x, np.sin(x), linestyle="--", marker="s")
+plt.title("Marker Experiment 2")
+plt.show()
+
+# 20
+x = np.linspace(0, 10, 100)
+
+plt.figure(figsize=(8,4))
+plt.plot(x, np.sin(x), linestyle=":", marker="^")
+plt.title("Marker Experiment 3")
+plt.show()
+
+# 21
+x = np.linspace(0, 10, 100)
+
+plt.figure(figsize=(8,4))
+plt.plot(x, np.sin(x), linestyle="-.", marker="*")
+plt.title("Marker Experiment 4")
+plt.show()
+
+# 22
+subjects2 = ["A","B","C","D","E"]
+values = np.random.randint(10,100,5)
+
+plt.figure()
+plt.bar(subjects2, values, color="cyan")
+plt.title("Bar Variation 1")
+plt.show()
+
+# 23
+subjects2 = ["A","B","C","D","E"]
+values = np.random.randint(10,100,5)
+
+plt.figure()
+plt.barh(subjects2, values, color="magenta")
+plt.title("Horizontal Bar")
+plt.show()
+
+# 24
+data2 = np.random.randn(300)
+
+plt.figure()
+plt.hist(data2, bins=30, color="green")
+plt.title("Histogram Variation 2")
+plt.show()
+
+# 25
+data2 = np.random.randn(300)
+
+plt.figure()
+plt.hist(data2, bins=10, color="red", density=True)
+plt.title("Histogram Density")
+plt.show()
+
+# 26
+sizes2 = [25,35,25,15]
+labels2 = ["W","X","Y","Z"]
+
+plt.figure()
+plt.pie(sizes2, labels=labels2, autopct="%1.1f%%")
+plt.title("Pie Variation 1")
+plt.show()
+
+# 27
+sizes2 = [25,35,25,15]
+labels2 = ["W","X","Y","Z"]
+
+plt.figure()
+plt.pie(sizes2, labels=labels2, explode=[0,0.2,0,0], shadow=True)
+plt.title("Pie Variation 2")
+plt.show()
+
+# 28
+sizes2 = [25,35,25,15]
+labels2 = ["W","X","Y","Z"]
+
+plt.figure()
+plt.pie(sizes2, labels=labels2, startangle=180)
+plt.title("Pie Variation 3")
+plt.show()
+
+# 29
+x = np.linspace(0, 10, 100)
+
+plt.figure()
+plt.plot(x, np.sin(x))
+plt.plot(x, np.cos(x))
+plt.title("Combined Trig")
+plt.legend(["sin","cos"])
+plt.grid(True)
+plt.show()
+
+# 30
+x_sc = np.random.rand(50)*10
+y_sc = np.random.rand(50)*10
+
+plt.figure()
+plt.scatter(x_sc, y_sc, alpha=0.3)
+plt.title("Scatter Low Alpha")
+plt.show()
+
+# 31
+x_sc = np.random.rand(50)*10
+y_sc = np.random.rand(50)*10
+
+plt.figure()
+plt.scatter(x_sc, y_sc, alpha=1.0)
+plt.title("Scatter Full Alpha")
+plt.show()
+
+# 32
+x = np.linspace(0, 10, 100)
+
+plt.figure()
+plt.plot(x, np.tan(x))
+plt.ylim(-5,5)
+plt.title("Clipped Tangent")
+plt.grid(True)
+plt.show()
+
+# 33
+x = np.linspace(0, 10, 100)
+
+plt.figure()
+plt.plot(x, np.sin(x))
+plt.annotate("start", xy=(0,0), xytext=(1,0.5), arrowprops=dict(arrowstyle="->"))
+plt.title("Annotation 2")
+plt.grid(True)
+plt.show()
+
+# 34
+x = np.linspace(0, 10, 100)
+
+plt.figure()
+plt.plot(x, np.cos(x))
+plt.annotate("peak", xy=(0,1), xytext=(2,1.2), arrowprops=dict(arrowstyle="->"))
+plt.title("Annotation 3")
+plt.grid(True)
+plt.show()
+
+# 35
+x = np.linspace(0, 10, 100)
+x_sc = np.random.rand(50)*10
+y_sc = np.random.rand(50)*10
+data2 = np.random.randn(300)
+subjects2 = ["A","B","C","D","E"]
+values = np.random.randint(10,100,5)
+
+fig = plt.figure(figsize=(10,8))
+plt.subplot(2,3,1)
+plt.plot(x, np.sin(x))
+plt.title("1")
+
+plt.subplot(2,3,2)
+plt.plot(x, np.cos(x))
+plt.title("2")
+
+plt.subplot(2,3,3)
+plt.plot(x, np.tan(x))
+plt.ylim(-3,3)
+plt.title("3")
+
+plt.subplot(2,3,4)
+plt.scatter(x_sc, y_sc)
+plt.title("4")
+
+plt.subplot(2,3,5)
+plt.hist(data2)
+plt.title("5")
+
+plt.subplot(2,3,6)
+plt.bar(subjects2, values)
+plt.title("6")
+
+plt.tight_layout()
+plt.show()
+
+# 36
+x = np.linspace(0, 10, 100)
+
+plt.figure()
+plt.plot(x, np.sin(x), color="red")
+plt.plot(x, np.sin(2*x), color="blue")
+plt.title("Final Frequency Plot")
+plt.legend(["sin","sin2"])
+plt.grid(True)
+plt.show()
+
+# 37
+plt.figure()
+plt.scatter(np.random.rand(50), np.random.rand(50), color="green")
+plt.title("Final Scatter")
+plt.show()
+
+# 38
+plt.figure()
+plt.hist(np.random.randn(200), bins=15, color="orange")
+plt.title("Final Histogram")
+plt.show()
+
+# 39
+x = np.linspace(0, 10, 100)
+
+plt.figure()
+plt.plot(x, np.exp(-x))
+plt.title("Decay Curve")
+plt.grid(True)
+plt.show()
+
+# 40
+x = np.linspace(0, 10, 100)
+
+plt.figure()
+plt.plot(x, np.sin(x))
+plt.grid(True, color="gray", linestyle="--", alpha=0.7)
+plt.title("Grid Styling Example")
+plt.show()
+
+# 41
+x = np.linspace(0, 10, 100)
+
+plt.figure()
+plt.plot(x, np.cos(x))
+plt.title("Save Example Plot")
+plt.savefig("example_plot.png")
+plt.show()
+
+# 42
+plt.figure()
+plt.bar(["A","B"], [1,2])
+plt.title("End Bar")
+plt.show()
+
+# 3D LINE PLOT
+# 43
+fig = plt.figure()
+ax = fig.add_subplot(111, projection='3d')
+
+t = np.linspace(0, 20, 200)
+x = np.sin(t)
+y = np.cos(t)
+z = t
+
+ax.plot(x, y, z, color="red")
+ax.set_title("3D Line Plot")
+plt.show()
+
+
+# 3D SCATTER PLOT
+# 44
+fig = plt.figure()
+ax = fig.add_subplot(111, projection='3d')
+
+x = np.random.rand(100)
+y = np.random.rand(100)
+z = np.random.rand(100)
+
+ax.scatter(x, y, z, c=z, cmap="viridis")
+ax.set_title("3D Scatter Plot")
+plt.show()
+
+
+# 3D SURFACE PLOT
+# 45
+fig = plt.figure()
+ax = fig.add_subplot(111, projection='3d')
+
+x = np.linspace(-5, 5, 50)
+y = np.linspace(-5, 5, 50)
+X, Y = np.meshgrid(x, y)
+Z = np.sin(np.sqrt(X**2 + Y**2))
+
+ax.plot_surface(X, Y, Z, cmap="plasma")
+ax.set_title("3D Surface Plot")
+plt.show()
+
+
+# CONTOUR PLOT
+# 46
+x = np.linspace(-5, 5, 100)
+y = np.linspace(-5, 5, 100)
+X, Y = np.meshgrid(x, y)
+Z = np.cos(X) * np.sin(Y)
+
+plt.figure()
+plt.contour(X, Y, Z, levels=20)
+plt.title("Contour Plot")
+plt.show()
+
+
+# FILLED CONTOUR
+# 47
+x = np.linspace(-5, 5, 100)
+y = np.linspace(-5, 5, 100)
+X, Y = np.meshgrid(x, y)
+Z = np.cos(X) * np.sin(Y)
+
+plt.figure()
+plt.contourf(X, Y, Z, levels=20, cmap="coolwarm")
+plt.colorbar()
+plt.title("Filled Contour Plot")
+plt.show()
+
+
+# HEATMAP (imshow style)
+
+# 48
+data = np.random.rand(10, 10)
+
+plt.figure()
+plt.imshow(data, cmap="hot", interpolation="nearest")
+plt.colorbar()
+plt.title("Heatmap")
+plt.show()
+
+
+# MULTIPLE HEATMAP VARIATIONS
+# 49
+data2 = np.random.randn(20, 20)
+
+plt.figure()
+plt.imshow(data2, cmap="coolwarm")
+plt.colorbar()
+plt.title("Heatmap Variation 2")
+plt.show()
+
+
+# BOX PLOT (via matplotlib)
+# 50
+data = [np.random.randn(100),
+        np.random.randn(100) + 1,
+        np.random.randn(100) + 2]
+
+plt.figure()
+plt.boxplot(data)
+plt.title("Box Plot Comparison")
+plt.show()
+
+
+# VIOLIN PLOT
+# 51
+data = [np.random.randn(100),
+        np.random.randn(100) + 1,
+        np.random.randn(100) + 2]
+
+plt.figure()
+plt.violinplot(data)
+plt.title("Violin Plot")
+plt.show()
+
+
+# STEM VARIATION
+# 52
+x = np.arange(0, 20)
+y = np.random.randint(1, 10, 20)
+
+plt.figure()
+plt.stem(x, y, linefmt="g-", markerfmt="go", basefmt="r-")
+plt.title("Stem Plot Advanced")
+plt.show()
+
+
+# STEP PLOT
+# 53
+x = np.arange(0, 10)
+y = x ** 2
+
+plt.figure()
+plt.step(x, y, where="mid")
+plt.title("Step Plot")
+plt.grid(True)
+plt.show()
+
+
+# STACKED BAR PLOT
+# 54
+x = ["A", "B", "C", "D"]
+y1 = np.array([1, 2, 3, 4])
+y2 = np.array([2, 1, 2, 1])
+
+plt.figure()
+plt.bar(x, y1, label="Group 1")
+plt.bar(x, y2, bottom=y1, label="Group 2")
+plt.legend()
+plt.title("Stacked Bar Plot")
+plt.show()
+
+
+# MULTI LINE DASH STYLE
+# 55
+x = np.linspace(0, 10, 100)
+
+plt.figure()
+plt.plot(x, np.sin(x), linestyle="-", label="solid")
+plt.plot(x, np.sin(x+1), linestyle="--", label="dashed")
+plt.plot(x, np.sin(x+2), linestyle=":", label="dotted")
+plt.plot(x, np.sin(x+3), linestyle="-.", label="dashdot")
+plt.legend()
+plt.title("Line Style Comparison")
+plt.grid(True)
+plt.show()
+
+
+# MULTI MARKER DEMO
+# 56
+x = np.linspace(0, 10, 100)
+
+plt.figure()
+plt.plot(x, np.cos(x), marker="o", label="circle")
+plt.plot(x, np.cos(x+1), marker="s", label="square")
+plt.plot(x, np.cos(x+2), marker="^", label="triangle")
+plt.legend()
+plt.title("Marker Comparison")
+plt.show()
+
+
+# MULTI COLOR SCATTER CLUSTERING STYLE
+# 57
+x = np.random.randn(200)
+y = np.random.randn(200)
+groups = np.random.randint(0, 3, 200)
+
+plt.figure()
+plt.scatter(x, y, c=groups, cmap="rainbow")
+plt.title("Cluster Scatter")
+plt.colorbar()
+plt.show()
+
+
+# TIME SERIES STYLE PLOT
+# 58
+time = np.arange(0, 100)
+signal = np.sin(time * 0.2) + np.random.randn(100) * 0.1
+
+plt.figure()
+plt.plot(time, signal)
+plt.title("Noisy Time Series")
+plt.grid(True)
+plt.show()
+
+
+# SMOOTHING USING MOVING AVERAGE
+# 59
+time = np.arange(0, 100)
+signal = np.sin(time * 0.2) + np.random.randn(100) * 0.1
+
+window = 5
+smooth = np.convolve(signal, np.ones(window)/window, mode='valid')
+
+plt.figure()
+plt.plot(signal, alpha=0.5, label="original")
+plt.plot(range(window-1, len(signal)), smooth, label="smoothed")
+plt.legend()
+plt.title("Moving Average Smoothing")
+plt.show()
+
+
+# CUMULATIVE SUM PLOT
+# 60
+data = np.random.randn(100).cumsum()
+
+plt.figure()
+plt.plot(data)
+plt.title("Cumulative Sum")
+plt.grid(True)
+plt.show()
+
+
+# PROBABILITY DISTRIBUTION VISUALIZATION
+# 61
+samples = np.random.normal(0, 1, 1000)
+
+plt.figure()
+plt.hist(samples, bins=30, density=True)
+plt.title("Normal Distribution")
+plt.show()
+
+
+# MULTI SUBPLOTS GRID (3x3)
+# 62
+fig = plt.figure(figsize=(10, 8))
+
+for i in range(1, 10):
+    plt.subplot(3, 3, i)
+    plt.plot(np.random.randn(10))
+    plt.title(f"Plot {i}")
+
+plt.tight_layout()
+plt.show()
+
+
+# ANNOTATION HEAVY PLOT
+# 63
+x = np.linspace(0, 10, 100)
+y = np.sin(x)
+
+plt.figure()
+plt.plot(x, y)
+plt.annotate("Start", xy=(0,0), xytext=(1,1),
+             arrowprops=dict(arrowstyle="->"))
+plt.annotate("Peak", xy=(1.5,1), xytext=(3,1.5),
+             arrowprops=dict(arrowstyle="->"))
+plt.title("Annotations Demo")
+plt.grid(True)
+plt.show()
+
+
+# LOG SCALE BOTH AXES
+# 64
+x = np.linspace(1, 100, 100)
+y = x ** 2
+
+plt.figure()
+plt.loglog(x, y)
+plt.title("Log-Log Plot")
+plt.grid(True)
+plt.show()
+
+
+# SEMILOG PLOT
+# 65
+x = np.linspace(1, 100, 100)
+y = x ** 2
+
+plt.figure()
+plt.semilogy(x, y)
+plt.title("Semilog Y Plot")
+plt.grid(True)
+plt.show()
+
+
+# GRID VARIATIONS
+# 66
+plt.figure()
+plt.plot(np.sin(np.linspace(0, 10, 100)))
+plt.grid(True, which="both", linestyle="--", linewidth=0.5)
+plt.title("Advanced Grid")
+plt.show()
+
+
+# FINAL MULTI-LAYER PLOT
+# 67
+x = np.linspace(0, 10, 100)
+
+plt.figure()
+plt.plot(x, np.sin(x), label="sin")
+plt.plot(x, np.cos(x), label="cos")
+plt.plot(x, np.sin(2*x), label="sin2x")
+plt.fill_between(x, np.sin(x), alpha=0.2)
+plt.legend()
+plt.title("Final Combined Visualization")
+plt.grid(True)
+plt.show()
+
+
+np.random.seed(42)
+
+# 68 
+# FINANCIAL STOCK PRICE VISUALIZATION
+
+
+days = np.arange(1, 101)
+prices = np.cumsum(np.random.randn(100) * 2 + 0.5) + 100
+
+plt.figure(figsize=(12,5))
+plt.plot(days, prices, color='blue', linewidth=2)
+plt.fill_between(days, prices, alpha=0.2)
+
+plt.title("Stock Price Simulation")
+plt.xlabel("Day")
+plt.ylabel("Price")
+plt.grid(True)
+plt.show()
+
+
+# 69 
+# MOVING AVERAGE ANALYSIS
+
+days = np.arange(1, 101)
+prices = np.cumsum(np.random.randn(100) * 2 + 0.5) + 100
+
+window = 10
+moving_avg = np.convolve(prices, np.ones(window)/window, mode='valid')
+
+plt.figure(figsize=(12,5))
+plt.plot(days, prices, label="Original")
+plt.plot(days[window-1:], moving_avg,
+         linewidth=3,
+         label="Moving Average")
+
+plt.legend()
+plt.title("Moving Average Trend")
+plt.grid(True)
+plt.show()
+
+
+# 70 
+# REALISTIC TEMPERATURE ANALYSIS
+
+months = np.arange(1,13)
+
+temperature = [12,15,20,27,34,39,41,39,35,28,20,14]
+
+plt.figure(figsize=(10,5))
+
+plt.plot(months,
+         temperature,
+         marker='o',
+         markersize=8,
+         linewidth=3,
+         color='red')
+
+plt.xticks(months)
+
+plt.title("Average Temperature Through Year")
+plt.xlabel("Month")
+plt.ylabel("Temperature °C")
+
+plt.grid(True)
+plt.show()
+
+# 71 
+# AREA PLOT
+
+x = np.arange(1,11)
+y = np.random.randint(5,20,10)
+
+plt.figure(figsize=(10,5))
+
+plt.fill_between(x, y,
+                 color='green',
+                 alpha=0.4)
+
+plt.plot(x, y, color='green')
+
+plt.title("Area Plot")
+plt.xlabel("X")
+plt.ylabel("Y")
+
+plt.grid(True)
+plt.show()
+
+# 72 
+# STACK PLOT
+
+days = np.arange(1,8)
+
+study = [2,3,4,3,5,6,5]
+sleep = [7,6,7,8,7,6,7]
+gaming = [2,1,2,1,2,3,2]
+
+plt.figure(figsize=(10,5))
+
+plt.stackplot(days,
+              study,
+              sleep,
+              gaming,
+              labels=['Study','Sleep','Gaming'])
+
+plt.legend(loc='upper left')
+
+plt.title("Daily Activity Distribution")
+plt.xlabel("Day")
+plt.ylabel("Hours")
+
+plt.show()
+
+# 73 
+# ERROR BAND VISUALIZATION
+
+x = np.linspace(0,10,100)
+y = np.sin(x)
+
+error = 0.2
+
+plt.figure(figsize=(10,5))
+
+plt.plot(x, y, color='blue')
+
+plt.fill_between(x,
+                 y-error,
+                 y+error,
+                 alpha=0.3)
+
+plt.title("Prediction Confidence Interval")
+plt.grid(True)
+
+plt.show()
+
+
+# 74 
+# POLAR PLOT
+
+theta = np.linspace(0, 2*np.pi, 100)
+r = np.abs(np.sin(5*theta))
+
+plt.figure(figsize=(7,7))
+
+ax = plt.subplot(111, projection='polar')
+
+ax.plot(theta, r)
+
+ax.set_title("Polar Plot")
+
+plt.show()
+
+
+# 75 
+# RADAR CHART
+
+categories = ['Python','C++','Java','SQL','AI']
+values = [90,80,70,75,95]
+
+values += values[:1]
+
+angles = np.linspace(0, 2*np.pi, len(values), endpoint=True)
+
+fig = plt.figure(figsize=(7,7))
+ax = plt.subplot(111, polar=True)
+
+ax.plot(angles, values)
+ax.fill(angles, values, alpha=0.3)
+
+ax.set_xticks(angles[:-1])
+ax.set_xticklabels(categories)
+
+plt.title("Skill Radar Chart")
+
+plt.show()
+
+
+# 76 
+# DENSITY STYLE HISTOGRAM
+
+data = np.random.normal(0,1,1000)
+
+plt.figure(figsize=(10,5))
+
+plt.hist(data,
+         bins=40,
+         density=True,
+         alpha=0.6)
+
+plt.title("Probability Density Histogram")
+plt.grid(True)
+
+plt.show()
+
+
+# 77 
+# CUMULATIVE HISTOGRAM
+
+data = np.random.normal(0,1,1000)
+
+plt.figure(figsize=(10,5))
+
+plt.hist(data,
+         bins=40,
+         cumulative=True)
+
+plt.title("Cumulative Distribution")
+plt.grid(True)
+
+plt.show()
+
+
+# 78 
+# BUBBLE CHART
+
+x = np.random.rand(50)
+y = np.random.rand(50)
+sizes = np.random.rand(50) * 2000
+
+plt.figure(figsize=(10,6))
+
+plt.scatter(x,
+            y,
+            s=sizes,
+            alpha=0.5)
+
+plt.title("Bubble Chart")
+
+plt.grid(True)
+
+plt.show()
+
+# 79 
+# REALISTIC SALES DASHBOARD
+
+fig = plt.figure(figsize=(14,8))
+
+# Sales trend
+plt.subplot(2,2,1)
+
+months = ['Jan','Feb','Mar','Apr','May','Jun']
+sales = [120,150,170,160,210,250]
+
+plt.plot(months, sales, marker='o')
+
+plt.title("Monthly Sales")
+
+# Revenue bar
+plt.subplot(2,2,2)
+
+revenue = [12,14,18,16,22,25]
+
+plt.bar(months, revenue)
+
+plt.title("Revenue")
+
+# Pie chart
+plt.subplot(2,2,3)
+
+regions = ['Asia','Europe','USA']
+
+sizes = [45,30,25]
+
+plt.pie(sizes,
+        labels=regions,
+        autopct='%1.1f%%')
+
+plt.title("Regional Share")
+
+# Histogram
+plt.subplot(2,2,4)
+
+customers = np.random.normal(100,20,200)
+
+plt.hist(customers, bins=20)
+
+plt.title("Customer Distribution")
+
+plt.tight_layout()
+
+plt.show()
+
+
+# 80 
+# CORRELATION SCATTER
+
+study_hours = np.random.randint(1,10,100)
+
+marks = study_hours * 10 + np.random.randn(100)*5
+
+plt.figure(figsize=(10,5))
+
+plt.scatter(study_hours,
+            marks,
+            alpha=0.7)
+
+plt.title("Study Hours vs Marks")
+
+plt.xlabel("Study Hours")
+plt.ylabel("Marks")
+
+plt.grid(True)
+
+plt.show()
+
+
+# 81 
+# REGRESSION STYLE VISUALIZATION
+
+study_hours = np.random.randint(1,10,100)
+marks = study_hours * 10 + np.random.randn(100)*5
+
+m, b = np.polyfit(study_hours, marks, 1)
+
+plt.figure(figsize=(10,5))
+
+plt.scatter(study_hours, marks)
+
+plt.plot(study_hours,
+         m*study_hours+b,
+         color='red',
+         linewidth=3)
+
+plt.title("Regression Line")
+
+plt.grid(True)
+
+plt.show()
+
+
+# 82 
+# WATERFALL STYLE GRAPH
+
+values = [100, -20, 30, -10, 50]
+
+cumulative = np.cumsum(values)
+
+plt.figure(figsize=(10,5))
+
+plt.bar(range(len(values)),
+        cumulative,
+        color=['green' if v>0 else 'red'
+               for v in values])
+
+plt.title("Waterfall Style Visualization")
+
+plt.grid(True)
+
+plt.show()
+
+
+# 83 
+# HORIZONTAL COMPARISON DASHBOARD
+
+languages = ['Python','C++','Java','Rust','Go']
+usage = [95,80,70,50,60]
+
+plt.figure(figsize=(10,5))
+
+plt.barh(languages,
+         usage)
+
+plt.title("Programming Language Popularity")
+
+plt.xlabel("Popularity")
+
+plt.grid(True)
+
+plt.show()
+
+
+# 84 
+# ADVANCED SUBPLOT LAYOUT
+
+fig, axes = plt.subplots(2,2, figsize=(12,8))
+
+x = np.linspace(0,10,100)
+
+axes[0,0].plot(x, np.sin(x))
+axes[0,0].set_title("sin")
+
+axes[0,1].plot(x, np.cos(x))
+axes[0,1].set_title("cos")
+
+axes[1,0].plot(x, np.tan(x))
+axes[1,0].set_ylim(-5,5)
+axes[1,0].set_title("tan")
+
+axes[1,1].plot(x, np.exp(-x))
+axes[1,1].set_title("exp decay")
+
+plt.tight_layout()
+
+plt.show()
+
+
+# 85 
+# DUAL AXIS PLOT
+
+x = np.arange(1,13)
+
+temperature = np.random.randint(20,40,12)
+rainfall = np.random.randint(50,200,12)
+
+fig, ax1 = plt.subplots(figsize=(12,5))
+
+ax1.plot(x,
+         temperature,
+         color='red',
+         marker='o')
+
+ax1.set_ylabel("Temperature", color='red')
+
+ax2 = ax1.twinx()
+
+ax2.bar(x,
+        rainfall,
+        alpha=0.3)
+
+ax2.set_ylabel("Rainfall")
+
+plt.title("Temperature vs Rainfall")
+
+plt.show()
+
+
+# 86 
+# VECTOR FIELD (QUIVER PLOT)
+
+x, y = np.meshgrid(np.arange(-2,3),
+                   np.arange(-2,3))
+
+u = -y
+v = x
+
+plt.figure(figsize=(7,7))
+
+plt.quiver(x, y, u, v)
+
+plt.title("Vector Field")
+
+plt.grid(True)
+
+plt.show()
+
+
+# 87 
+# STREAM PLOT
+
+Y, X = np.mgrid[-3:3:100j,
+                -3:3:100j]
+
+U = -1 - X**2 + Y
+V = 1 + X - Y**2
+
+plt.figure(figsize=(8,8))
+
+plt.streamplot(X, Y, U, V)
+
+plt.title("Stream Plot")
+
+plt.show()
+
+
+# 88 
+# LIVE ANIMATION STYLE
+
+fig, ax = plt.subplots()
+
+xdata = []
+ydata = []
+
+line, = ax.plot([], [])
+
+ax.set_xlim(0,100)
+ax.set_ylim(-1,1)
+
+def update(frame):
+
+    xdata.append(frame)
+    ydata.append(np.sin(frame/10))
+
+    line.set_data(xdata, ydata)
+
+    return line,
+
+ani = FuncAnimation(fig,
+                    update,
+                    frames=np.arange(0,100),
+                    interval=50)
+
+plt.title("Animation Example")
+
+plt.show()
+
+
+# 89 
+# EVENT TIMELINE VISUALIZATION
+
+events = ['Start','Design','Coding','Testing','Launch']
+
+times = [1,3,6,8,10]
+
+plt.figure(figsize=(12,3))
+
+plt.hlines(1,
+           xmin=0,
+           xmax=11)
+
+plt.plot(times,
+         [1]*len(times),
+         'o')
+
+for t, e in zip(times, events):
+
+    plt.text(t, 1.02, e,
+             ha='center')
+
+plt.yticks([])
+
+plt.title("Project Timeline")
+
+plt.show()
+
+
+# 90 
+# ADVANCED PIE DONUT CHART
+
+sizes = [40,30,20,10]
+
+plt.figure(figsize=(7,7))
+
+plt.pie(sizes,
+        wedgeprops=dict(width=0.4),
+        autopct='%1.1f%%')
+
+plt.title("Donut Chart")
+
+plt.show()
+
+
+# 91 
+# CUSTOM STYLE GRAPH
+
+plt.style.use('ggplot')
+
+x = np.linspace(0,10,100)
+
+plt.figure(figsize=(10,5))
+
+plt.plot(x,
+         np.sin(x),
+         linewidth=3)
+
+plt.title("GGPlot Style")
+
+plt.show()
+
+
+# 92 
+# FINAL PROFESSIONAL DASHBOARD
+
+fig = plt.figure(figsize=(15,10))
+
+# Revenue
+plt.subplot(3,2,1)
+
+revenue = np.cumsum(np.random.randn(50)*10+100)
+
+plt.plot(revenue)
+
+plt.title("Revenue Growth")
+
+# Profit
+plt.subplot(3,2,2)
+
+profit = np.random.randint(20,100,12)
+
+plt.bar(range(12), profit)
+
+plt.title("Monthly Profit")
+
+# Customers
+plt.subplot(3,2,3)
+
+customers = np.random.normal(500,50,500)
+
+plt.hist(customers, bins=25)
+
+plt.title("Customers")
+
+# Market share
+plt.subplot(3,2,4)
+
+share = [35,25,20,20]
+
+plt.pie(share,
+        autopct='%1.1f%%')
+
+plt.title("Market Share")
+
+# Scatter
+plt.subplot(3,2,5)
+
+x = np.random.rand(100)
+
+y = x + np.random.randn(100)*0.1
+
+plt.scatter(x,y)
+
+plt.title("Correlation")
+
+# Area
+plt.subplot(3,2,6)
+
+x = np.arange(20)
+
+y = np.random.randint(10,30,20)
+
+plt.fill_between(x,y,alpha=0.5)
+
+plt.title("Area Trend")
+
+plt.tight_layout()
+
+plt.show()

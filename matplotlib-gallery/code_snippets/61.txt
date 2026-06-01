@@ -1,0 +1,11 @@
+# NOTE: Please import relevant libraries (e.g., import matplotlib.pyplot as plt, import numpy as np) before running this snippet.
+
+samples = np.random.normal(0, 1, 1000)
+
+plt.figure()
+plt.hist(samples, bins=30, density=True)
+plt.title("Normal Distribution")
+plt.show()
+
+
+# MULTI SUBPLOTS GRID (3x3)

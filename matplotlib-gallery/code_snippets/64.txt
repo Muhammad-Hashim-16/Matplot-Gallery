@@ -1,0 +1,13 @@
+# NOTE: Please import relevant libraries (e.g., import matplotlib.pyplot as plt, import numpy as np) before running this snippet.
+
+x = np.linspace(1, 100, 100)
+y = x ** 2
+
+plt.figure()
+plt.loglog(x, y)
+plt.title("Log-Log Plot")
+plt.grid(True)
+plt.show()
+
+
+# SEMILOG PLOT

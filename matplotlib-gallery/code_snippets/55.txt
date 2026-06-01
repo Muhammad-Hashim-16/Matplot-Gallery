@@ -1,0 +1,16 @@
+# NOTE: Please import relevant libraries (e.g., import matplotlib.pyplot as plt, import numpy as np) before running this snippet.
+
+x = np.linspace(0, 10, 100)
+
+plt.figure()
+plt.plot(x, np.sin(x), linestyle="-", label="solid")
+plt.plot(x, np.sin(x+1), linestyle="--", label="dashed")
+plt.plot(x, np.sin(x+2), linestyle=":", label="dotted")
+plt.plot(x, np.sin(x+3), linestyle="-.", label="dashdot")
+plt.legend()
+plt.title("Line Style Comparison")
+plt.grid(True)
+plt.show()
+
+
+# MULTI MARKER DEMO

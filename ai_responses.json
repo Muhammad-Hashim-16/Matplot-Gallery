@@ -1,0 +1,554 @@
+[
+{
+"id": 1,
+"name": "Sine and Cosine Line Plot",
+"difficulty": "Beginner",
+"tags": ["Line", "Multi-line", "Mathematical"]
+},
+{
+"id": 2,
+"name": "Customized Scatter Plot with Colorbar",
+"difficulty": "Intermediate",
+"tags": ["Scatter", "Bubble", "Colormap"]
+},
+{
+"id": 3,
+"name": "Subject Marks Comparison Bar Chart",
+"difficulty": "Beginner",
+"tags": ["Bar"]
+},
+{
+"id": 4,
+"name": "Normal Distribution Density Histogram",
+"difficulty": "Beginner",
+"tags": ["Histogram", "Distribution", "Statistical"]
+},
+{
+"id": 5,
+"name": "Exploded Pie Chart with Shadow",
+"difficulty": "Beginner",
+"tags": ["Pie"]
+},
+{
+"id": 6,
+"name": "Sine Function Subplot",
+"difficulty": "Intermediate",
+"tags": ["Line", "Subplots", "Mathematical"]
+},
+{
+"id": 7,
+"name": "Subject Marks Bar Subplot",
+"difficulty": "Intermediate",
+"tags": ["Bar", "Subplots"]
+},
+{
+"id": 8,
+"name": "Line Plot with Controlled Axes",
+"difficulty": "Beginner",
+"tags": ["Line"]
+},
+{
+"id": 9,
+"name": "Damped Sine Filled Area Plot",
+"difficulty": "Intermediate",
+"tags": ["Line", "Filled", "Mathematical"]
+},
+{
+"id": 10,
+"name": "Quadratic Sequence Stem Plot",
+"difficulty": "Beginner",
+"tags": ["Stem", "Mathematical"]
+},
+{
+"id": 11,
+"name": "Hexagonal Binning Density Plot",
+"difficulty": "Intermediate",
+"tags": ["Colormap", "Distribution", "Statistical"]
+},
+{
+"id": 12,
+"name": "Annotated Sine and Cosine Plot",
+"difficulty": "Intermediate",
+"tags": ["Line", "Multi-line", "Mathematical"]
+},
+{
+"id": 13,
+"name": "Basic Sequential Line Plot",
+"difficulty": "Beginner",
+"tags": ["Line"]
+},
+{
+"id": 14,
+"name": "Four Quadrant Multi Chart Layout",
+"difficulty": "Intermediate",
+"tags": ["Subplots", "Line", "Scatter", "Bar"]
+},
+{
+"id": 15,
+"name": "One Dimensional Random Walk Time Series",
+"difficulty": "Beginner",
+"tags": ["Line", "Time Series", "Statistical"]
+},
+{
+"id": 16,
+"name": "Sine Wave Frequency Comparison",
+"difficulty": "Beginner",
+"tags": ["Line", "Multi-line", "Mathematical"]
+},
+{
+"id": 17,
+"name": "Exponential Growth Logarithmic Scale Plot",
+"difficulty": "Beginner",
+"tags": ["Line", "Logarithmic", "Mathematical"]
+},
+{
+"id": 18,
+"name": "Solid Line with Circular Markers",
+"difficulty": "Beginner",
+"tags": ["Line"]
+},
+{
+"id": 19,
+"name": "Dashed Line with Square Markers",
+"difficulty": "Beginner",
+"tags": ["Line"]
+},
+{
+"id": 20,
+"name": "Dotted Line with Triangle Markers",
+"difficulty": "Beginner",
+"tags": ["Line"]
+},
+{
+"id": 21,
+"name": "Dash Dot Line with Star Markers",
+"difficulty": "Beginner",
+"tags": ["Line"]
+},
+{
+"id": 22,
+"name": "Cyan Colored Vertical Bar Chart",
+"difficulty": "Beginner",
+"tags": ["Bar"]
+},
+{
+"id": 23,
+"name": "Magenta Horizontal Bar Chart",
+"difficulty": "Beginner",
+"tags": ["Bar"]
+},
+{
+"id": 24,
+"name": "High Resolution Frequency Histogram",
+"difficulty": "Beginner",
+"tags": ["Histogram", "Distribution"]
+},
+{
+"id": 25,
+"name": "Normalized Density Distribution Histogram",
+"difficulty": "Beginner",
+"tags": ["Histogram", "Distribution", "Statistical"]
+},
+{
+"id": 26,
+"name": "Basic Percentage Pie Chart",
+"difficulty": "Beginner",
+"tags": ["Pie"]
+},
+{
+"id": 27,
+"name": "Exploded Segment Shadowed Pie Chart",
+"difficulty": "Beginner",
+"tags": ["Pie"]
+},
+{
+"id": 28,
+"name": "Rotated Initial Angle Pie Chart",
+"difficulty": "Beginner",
+"tags": ["Pie"]
+},
+{
+"id": 29,
+"name": "Combined Trigonometric Functions Plot",
+"difficulty": "Beginner",
+"tags": ["Line", "Multi-line", "Mathematical"]
+},
+{
+"id": 30,
+"name": "Low Alpha Overlapping Scatter Plot",
+"difficulty": "Beginner",
+"tags": ["Scatter"]
+},
+{
+"id": 31,
+"name": "Full Opacity Scatter Plot",
+"difficulty": "Beginner",
+"tags": ["Scatter"]
+},
+{
+"id": 32,
+"name": "Clipped Range Tangent Function Plot",
+"difficulty": "Beginner",
+"tags": ["Line", "Mathematical"]
+},
+{
+"id": 33,
+"name": "Annotated Sine Wave Origin Point",
+"difficulty": "Intermediate",
+"tags": ["Line", "Mathematical"]
+},
+{
+"id": 34,
+"name": "Annotated Cosine Wave Peak Point",
+"difficulty": "Intermediate",
+"tags": ["Line", "Mathematical"]
+},
+{
+"id": 35,
+"name": "Two By Three Subplot Grid Layout",
+"difficulty": "Intermediate",
+"tags": ["Subplots", "Line", "Scatter", "Bar"]
+},
+{
+"id": 36,
+"name": "Dual Frequency Sine Wave Comparison",
+"difficulty": "Beginner",
+"tags": ["Line", "Multi-line", "Mathematical"]
+},
+{
+"id": 37,
+"name": "Random Distribution Uniform Scatter Plot",
+"difficulty": "Beginner",
+"tags": ["Scatter"]
+},
+{
+"id": 38,
+"name": "Random Normal Distribution Frequency Histogram",
+"difficulty": "Beginner",
+"tags": ["Histogram", "Distribution"]
+},
+{
+"id": 39,
+"name": "Exponential Decay Curve Plot",
+"difficulty": "Beginner",
+"tags": ["Line", "Mathematical"]
+},
+{
+"id": 40,
+"name": "Sine Plot with Custom Gridlines",
+"difficulty": "Beginner",
+"tags": ["Line", "Mathematical"]
+},
+{
+"id": 41,
+"name": "Cosine Line Plot Saved Output",
+"difficulty": "Beginner",
+"tags": ["Line", "Mathematical"]
+},
+{
+"id": 42,
+"name": "Simple Dual Category Bar Chart",
+"difficulty": "Beginner",
+"tags": ["Bar"]
+},
+{
+"id": 43,
+"name": "Trigonometric Helical 3D Line Plot",
+"difficulty": "Advanced",
+"tags": ["3D", "Line", "Mathematical"]
+},
+{
+"id": 44,
+"name": "Random Distribution 3D Scatter Plot",
+"difficulty": "Advanced",
+"tags": ["3D", "Scatter", "Colormap"]
+},
+{
+"id": 45,
+"name": "Trigonometric Function 3D Surface Plot",
+"difficulty": "Advanced",
+"tags": ["3D", "Surface", "Colormap", "Mathematical"]
+},
+{
+"id": 46,
+"name": "Two Dimensional Geometric Contour Plot",
+"difficulty": "Advanced",
+"tags": ["Contour", "Mathematical"]
+},
+{
+"id": 47,
+"name": "Filled Contour Plot with Colorbar",
+"difficulty": "Advanced",
+"tags": ["Contour", "Colormap", "Mathematical"]
+},
+{
+"id": 48,
+"name": "Nearest Neighbor Interpolation Matrix Heatmap",
+"difficulty": "Advanced",
+"tags": ["Heatmap", "Colormap"]
+},
+{
+"id": 49,
+"name": "Diverging Coolwarm Matrix Heatmap Plot",
+"difficulty": "Advanced",
+"tags": ["Heatmap", "Colormap", "Statistical"]
+},
+{
+"id": 50,
+"name": "Three Group Distribution Boxplot Comparison",
+"difficulty": "Intermediate",
+"tags": ["Boxplot", "Statistical", "Distribution"]
+},
+{
+"id": 51,
+"name": "Distribution Visualization Violin Plot",
+"difficulty": "Intermediate",
+"tags": ["Violin", "Distribution", "Statistical"]
+},
+{
+"id": 52,
+"name": "Customized Format Discrete Stem Plot",
+"difficulty": "Beginner",
+"tags": ["Stem"]
+},
+{
+"id": 53,
+"name": "Midpoint Rule Discrete Step Plot",
+"difficulty": "Beginner",
+"tags": ["Step", "Mathematical"]
+},
+{
+"id": 54,
+"name": "Two Group Stacked Bar Chart",
+"difficulty": "Intermediate",
+"tags": ["Bar"]
+},
+{
+"id": 55,
+"name": "Trigonometric Multi Line Style Comparison",
+"difficulty": "Beginner",
+"tags": ["Line", "Multi-line", "Mathematical"]
+},
+{
+"id": 56,
+"name": "Trigonometric Multi Marker Comparison Plot",
+"difficulty": "Beginner",
+"tags": ["Line", "Multi-line", "Mathematical"]
+},
+{
+"id": 57,
+"name": "Rainbow Colormap Clustered Scatter Plot",
+"difficulty": "Intermediate",
+"tags": ["Scatter", "Colormap", "Statistical"]
+},
+{
+"id": 58,
+"name": "Noisy Signal Sine Time Series",
+"difficulty": "Beginner",
+"tags": ["Line", "Time Series", "Statistical"]
+},
+{
+"id": 59,
+"name": "Moving Average Smoothing Line Comparison",
+"difficulty": "Intermediate",
+"tags": ["Line", "Multi-line", "Statistical"]
+},
+{
+"id": 60,
+"name": "Cumulative Sum Statistical Tracking Plot",
+"difficulty": "Beginner",
+"tags": ["Line", "Statistical"]
+},
+{
+"id": 61,
+"name": "Normalized Normal Distribution Density Histogram",
+"difficulty": "Beginner",
+"tags": ["Histogram", "Distribution", "Statistical"]
+},
+{
+"id": 62,
+"name": "Three by Three Random Subplot Grid",
+"difficulty": "Intermediate",
+"tags": ["Subplots", "Line"]
+},
+{
+"id": 63,
+"name": "Multiple Point Annotation Sine Plot",
+"difficulty": "Intermediate",
+"tags": ["Line", "Mathematical"]
+},
+{
+"id": 64,
+"name": "Dual Axis Logarithmic Scale Plot",
+"difficulty": "Beginner",
+"tags": ["Line", "Logarithmic", "Mathematical"]
+},
+{
+"id": 65,
+"name": "Y Axis Semilogarithmic Scale Plot",
+"difficulty": "Beginner",
+"tags": ["Line", "Logarithmic", "Mathematical"]
+},
+{
+"id": 66,
+"name": "Sine Curve with Advanced Gridlines",
+"difficulty": "Beginner",
+"tags": ["Line", "Mathematical"]
+},
+{
+"id": 67,
+"name": "Multi Line Trigonometric Filled Visualization",
+"difficulty": "Intermediate",
+"tags": ["Line", "Multi-line", "Filled", "Mathematical"]
+},
+{
+"id": 68,
+"name": "Financial Stock Price Filled Simulation",
+"difficulty": "Beginner",
+"tags": ["Line", "Time Series", "Filled"]
+},
+{
+"id": 69,
+"name": "Stock Price Moving Average Analysis",
+"difficulty": "Intermediate",
+"tags": ["Line", "Multi-line", "Time Series", "Statistical"]
+},
+{
+"id": 70,
+"name": "Annual Average Temperature Trend Line",
+"difficulty": "Beginner",
+"tags": ["Line", "Time Series"]
+},
+{
+"id": 71,
+"name": "Single Variable Filled Area Plot",
+"difficulty": "Beginner",
+"tags": ["Line", "Filled"]
+},
+{
+"id": 72,
+"name": "Daily Activity Distribution Stack Plot",
+"difficulty": "Intermediate",
+"tags": ["Filled", "Distribution"]
+},
+{
+"id": 73,
+"name": "Prediction Confidence Interval Error Band",
+"difficulty": "Intermediate",
+"tags": ["Line", "Filled", "Error Bars", "Mathematical"]
+},
+{
+"id": 74,
+"name": "Trigonometric Function Polar Coordinate Plot",
+"difficulty": "Intermediate",
+"tags": ["Polar", "Mathematical"]
+},
+{
+"id": 75,
+"name": "Programming Skill Metric Radar Chart",
+"difficulty": "Intermediate",
+"tags": ["Radar", "Polar", "Filled"]
+},
+{
+"id": 76,
+"name": "Probability Density Distribution Histogram",
+"difficulty": "Beginner",
+"tags": ["Histogram", "Distribution", "Statistical"]
+},
+{
+"id": 77,
+"name": "Cumulative Distribution Function Histogram",
+"difficulty": "Beginner",
+"tags": ["Histogram", "Distribution", "Statistical"]
+},
+{
+"id": 78,
+"name": "Multidimensional Data Bubble Chart Plot",
+"difficulty": "Beginner",
+"tags": ["Scatter", "Bubble"]
+},
+{
+"id": 79,
+"name": "Four Quadrant Commercial Sales Dashboard",
+"difficulty": "Intermediate",
+"tags": ["Subplots", "Line", "Bar", "Pie"]
+},
+{
+"id": 80,
+"name": "Study Hours Performance Correlation Scatter",
+"difficulty": "Beginner",
+"tags": ["Scatter", "Statistical"]
+},
+{
+"id": 81,
+"name": "Linear Regression Best Fit Line Plot",
+"difficulty": "Intermediate",
+"tags": ["Scatter", "Line", "Statistical"]
+},
+{
+"id": 82,
+"name": "Sequential Cumulative Value Waterfall Chart",
+"difficulty": "Intermediate",
+"tags": ["Bar", "Statistical"]
+},
+{
+"id": 83,
+"name": "Horizontal Programming Language Popularity Bar",
+"difficulty": "Beginner",
+"tags": ["Bar"]
+},
+{
+"id": 84,
+"name": "Two by Two Trigonometric Subplots",
+"difficulty": "Intermediate",
+"tags": ["Subplots", "Line", "Mathematical"]
+},
+{
+"id": 85,
+"name": "Temperature and Rainfall Dual Axis Plot",
+"difficulty": "Intermediate",
+"tags": ["Subplots", "Line", "Bar", "Time Series"]
+},
+{
+"id": 86,
+"name": "Two Dimensional Vector Field Quiver Plot",
+"difficulty": "Advanced",
+"tags": ["Quiver", "Mathematical"]
+},
+{
+"id": 87,
+"name": "Fluid Dynamics Velocity Field Streamline Plot",
+"difficulty": "Advanced",
+"tags": ["Stream", "Mathematical"]
+},
+{
+"id": 88,
+"name": "Dynamic Live Sine Wave Line Animation",
+"difficulty": "Advanced",
+"tags": ["Animation", "Line", "Mathematical"]
+},
+{
+"id": 89,
+"name": "Project Event Milestones Horizontal Timeline",
+"difficulty": "Intermediate",
+"tags": ["Line", "Time Series"]
+},
+{
+"id": 90,
+"name": "Hollow Center Segmented Donut Chart",
+"difficulty": "Intermediate",
+"tags": ["Pie"]
+},
+{
+"id": 91,
+"name": "GGPlot Style Sine Wave Plot",
+"difficulty": "Beginner",
+"tags": ["Line", "Mathematical"]
+},
+{
+"id": 92,
+"name": "Six Panel Commercial KPI Dashboard",
+"difficulty": "Intermediate",
+"tags": ["Subplots", "Line", "Bar", "Pie"]
+}
+]

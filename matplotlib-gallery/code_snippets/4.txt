@@ -1,0 +1,10 @@
+# NOTE: Please import relevant libraries (e.g., import matplotlib.pyplot as plt, import numpy as np) before running this snippet.
+
+data = np.random.normal(50, 15, 500)
+plt.figure(figsize=(8,5), dpi=120)
+plt.hist(data, bins=20, color="skyblue", edgecolor="black", density=True)
+plt.title("Histogram of Normal Distribution")
+plt.xlabel("Value")
+plt.ylabel("Density")
+plt.grid(True, linestyle="--", alpha=0.5)
+plt.show()

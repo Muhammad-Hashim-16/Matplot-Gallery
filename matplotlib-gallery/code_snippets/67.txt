@@ -1,0 +1,16 @@
+# NOTE: Please import relevant libraries (e.g., import matplotlib.pyplot as plt, import numpy as np) before running this snippet.
+
+x = np.linspace(0, 10, 100)
+
+plt.figure()
+plt.plot(x, np.sin(x), label="sin")
+plt.plot(x, np.cos(x), label="cos")
+plt.plot(x, np.sin(2*x), label="sin2x")
+plt.fill_between(x, np.sin(x), alpha=0.2)
+plt.legend()
+plt.title("Final Combined Visualization")
+plt.grid(True)
+plt.show()
+
+
+np.random.seed(42)

@@ -1,0 +1,19 @@
+# NOTE: Please import relevant libraries (e.g., import matplotlib.pyplot as plt, import numpy as np) before running this snippet.
+
+# VECTOR FIELD (QUIVER PLOT)
+
+x, y = np.meshgrid(np.arange(-2,3),
+                   np.arange(-2,3))
+
+u = -y
+v = x
+
+plt.figure(figsize=(7,7))
+
+plt.quiver(x, y, u, v)
+
+plt.title("Vector Field")
+
+plt.grid(True)
+
+plt.show()

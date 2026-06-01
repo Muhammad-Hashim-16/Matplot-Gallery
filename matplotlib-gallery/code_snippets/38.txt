@@ -1,0 +1,6 @@
+# NOTE: Please import relevant libraries (e.g., import matplotlib.pyplot as plt, import numpy as np) before running this snippet.
+
+plt.figure()
+plt.hist(np.random.randn(200), bins=15, color="orange")
+plt.title("Final Histogram")
+plt.show()

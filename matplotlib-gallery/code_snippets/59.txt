@@ -1,0 +1,17 @@
+# NOTE: Please import relevant libraries (e.g., import matplotlib.pyplot as plt, import numpy as np) before running this snippet.
+
+time = np.arange(0, 100)
+signal = np.sin(time * 0.2) + np.random.randn(100) * 0.1
+
+window = 5
+smooth = np.convolve(signal, np.ones(window)/window, mode='valid')
+
+plt.figure()
+plt.plot(signal, alpha=0.5, label="original")
+plt.plot(range(window-1, len(signal)), smooth, label="smoothed")
+plt.legend()
+plt.title("Moving Average Smoothing")
+plt.show()
+
+
+# CUMULATIVE SUM PLOT

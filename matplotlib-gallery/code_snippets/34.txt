@@ -1,0 +1,10 @@
+# NOTE: Please import relevant libraries (e.g., import matplotlib.pyplot as plt, import numpy as np) before running this snippet.
+
+x = np.linspace(0, 10, 100)
+
+plt.figure()
+plt.plot(x, np.cos(x))
+plt.annotate("peak", xy=(0,1), xytext=(2,1.2), arrowprops=dict(arrowstyle="->"))
+plt.title("Annotation 3")
+plt.grid(True)
+plt.show()

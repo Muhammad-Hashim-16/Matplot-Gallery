@@ -1,0 +1,14 @@
+# NOTE: Please import relevant libraries (e.g., import matplotlib.pyplot as plt, import numpy as np) before running this snippet.
+
+x = np.linspace(0, 10, 100)
+
+plt.figure()
+plt.plot(x, np.cos(x), marker="o", label="circle")
+plt.plot(x, np.cos(x+1), marker="s", label="square")
+plt.plot(x, np.cos(x+2), marker="^", label="triangle")
+plt.legend()
+plt.title("Marker Comparison")
+plt.show()
+
+
+# MULTI COLOR SCATTER CLUSTERING STYLE

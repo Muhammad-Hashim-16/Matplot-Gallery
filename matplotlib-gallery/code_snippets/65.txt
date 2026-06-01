@@ -1,0 +1,13 @@
+# NOTE: Please import relevant libraries (e.g., import matplotlib.pyplot as plt, import numpy as np) before running this snippet.
+
+x = np.linspace(1, 100, 100)
+y = x ** 2
+
+plt.figure()
+plt.semilogy(x, y)
+plt.title("Semilog Y Plot")
+plt.grid(True)
+plt.show()
+
+
+# GRID VARIATIONS

@@ -1,0 +1,25 @@
+# NOTE: Please import relevant libraries (e.g., import matplotlib.pyplot as plt, import numpy as np) before running this snippet.
+
+# STACK PLOT
+
+days = np.arange(1,8)
+
+study = [2,3,4,3,5,6,5]
+sleep = [7,6,7,8,7,6,7]
+gaming = [2,1,2,1,2,3,2]
+
+plt.figure(figsize=(10,5))
+
+plt.stackplot(days,
+              study,
+              sleep,
+              gaming,
+              labels=['Study','Sleep','Gaming'])
+
+plt.legend(loc='upper left')
+
+plt.title("Daily Activity Distribution")
+plt.xlabel("Day")
+plt.ylabel("Hours")
+
+plt.show()

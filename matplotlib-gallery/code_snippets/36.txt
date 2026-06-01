@@ -1,0 +1,11 @@
+# NOTE: Please import relevant libraries (e.g., import matplotlib.pyplot as plt, import numpy as np) before running this snippet.
+
+x = np.linspace(0, 10, 100)
+
+plt.figure()
+plt.plot(x, np.sin(x), color="red")
+plt.plot(x, np.sin(2*x), color="blue")
+plt.title("Final Frequency Plot")
+plt.legend(["sin","sin2"])
+plt.grid(True)
+plt.show()

@@ -1,0 +1,31 @@
+# NOTE: Please import relevant libraries (e.g., import matplotlib.pyplot as plt, import numpy as np) before running this snippet.
+
+# LIVE ANIMATION STYLE
+
+fig, ax = plt.subplots()
+
+xdata = []
+ydata = []
+
+line, = ax.plot([], [])
+
+ax.set_xlim(0,100)
+ax.set_ylim(-1,1)
+
+def update(frame):
+
+    xdata.append(frame)
+    ydata.append(np.sin(frame/10))
+
+    line.set_data(xdata, ydata)
+
+    return line,
+
+ani = FuncAnimation(fig,
+                    update,
+                    frames=np.arange(0,100),
+                    interval=50)
+
+plt.title("Animation Example")
+
+plt.show()

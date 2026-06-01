@@ -1,0 +1,28 @@
+# NOTE: Please import relevant libraries (e.g., import matplotlib.pyplot as plt, import numpy as np) before running this snippet.
+
+# EVENT TIMELINE VISUALIZATION
+
+events = ['Start','Design','Coding','Testing','Launch']
+
+times = [1,3,6,8,10]
+
+plt.figure(figsize=(12,3))
+
+plt.hlines(1,
+           xmin=0,
+           xmax=11)
+
+plt.plot(times,
+         [1]*len(times),
+         'o')
+
+for t, e in zip(times, events):
+
+    plt.text(t, 1.02, e,
+             ha='center')
+
+plt.yticks([])
+
+plt.title("Project Timeline")
+
+plt.show()

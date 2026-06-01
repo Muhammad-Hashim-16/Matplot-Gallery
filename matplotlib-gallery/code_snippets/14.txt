@@ -1,0 +1,28 @@
+# NOTE: Please import relevant libraries (e.g., import matplotlib.pyplot as plt, import numpy as np) before running this snippet.
+
+x = np.arange(1, 6)
+y1 = np.array([10, 20, 15, 25, 30])
+x_sc = np.random.rand(50)*10
+y_sc = np.random.rand(50)*10
+subjects = ["Math", "CS", "Physics", "English", "Chem"]
+marks = [95, 88, 92, 85, 90]
+data = np.random.normal(50, 15, 500)
+
+fig = plt.figure(figsize=(10,8))
+plt.subplot(2,2,1)
+plt.plot(x, y1)
+plt.title("A")
+
+plt.subplot(2,2,2)
+plt.scatter(x_sc, y_sc)
+plt.title("B")
+
+plt.subplot(2,2,3)
+plt.bar(subjects, marks)
+plt.title("C")
+
+plt.subplot(2,2,4)
+plt.hist(data)
+plt.title("D")
+
+plt.show()

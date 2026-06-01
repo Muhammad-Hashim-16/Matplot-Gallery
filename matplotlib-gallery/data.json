@@ -1,0 +1,1045 @@
+[
+  {
+    "id": 1,
+    "name": "Sine and Cosine Line Plot",
+    "difficulty": "Beginner",
+    "tags": [
+      "Line",
+      "Multi-line",
+      "Mathematical"
+    ],
+    "image": "figures/1.png",
+    "code_file": "code_snippets/1.txt"
+  },
+  {
+    "id": 2,
+    "name": "Customized Scatter Plot with Colorbar",
+    "difficulty": "Intermediate",
+    "tags": [
+      "Scatter",
+      "Bubble",
+      "Colormap"
+    ],
+    "image": "figures/2.png",
+    "code_file": "code_snippets/2.txt"
+  },
+  {
+    "id": 3,
+    "name": "Subject Marks Comparison Bar Chart",
+    "difficulty": "Beginner",
+    "tags": [
+      "Bar"
+    ],
+    "image": "figures/3.png",
+    "code_file": "code_snippets/3.txt"
+  },
+  {
+    "id": 4,
+    "name": "Normal Distribution Density Histogram",
+    "difficulty": "Beginner",
+    "tags": [
+      "Histogram",
+      "Distribution",
+      "Statistical"
+    ],
+    "image": "figures/4.png",
+    "code_file": "code_snippets/4.txt"
+  },
+  {
+    "id": 5,
+    "name": "Exploded Pie Chart with Shadow",
+    "difficulty": "Beginner",
+    "tags": [
+      "Pie"
+    ],
+    "image": "figures/5.png",
+    "code_file": "code_snippets/5.txt"
+  },
+  {
+    "id": 6,
+    "name": "Sine Function Subplot",
+    "difficulty": "Intermediate",
+    "tags": [
+      "Line",
+      "Subplots",
+      "Mathematical"
+    ],
+    "image": "figures/6.png",
+    "code_file": "code_snippets/6.txt"
+  },
+  {
+    "id": 7,
+    "name": "Subject Marks Bar Subplot",
+    "difficulty": "Intermediate",
+    "tags": [
+      "Bar",
+      "Subplots"
+    ],
+    "image": "figures/7.png",
+    "code_file": "code_snippets/7.txt"
+  },
+  {
+    "id": 8,
+    "name": "Line Plot with Controlled Axes",
+    "difficulty": "Beginner",
+    "tags": [
+      "Line"
+    ],
+    "image": "figures/8.png",
+    "code_file": "code_snippets/8.txt"
+  },
+  {
+    "id": 9,
+    "name": "Damped Sine Filled Area Plot",
+    "difficulty": "Intermediate",
+    "tags": [
+      "Line",
+      "Filled",
+      "Mathematical"
+    ],
+    "image": "figures/9.png",
+    "code_file": "code_snippets/9.txt"
+  },
+  {
+    "id": 10,
+    "name": "Quadratic Sequence Stem Plot",
+    "difficulty": "Beginner",
+    "tags": [
+      "Stem",
+      "Mathematical"
+    ],
+    "image": "figures/10.png",
+    "code_file": "code_snippets/10.txt"
+  },
+  {
+    "id": 11,
+    "name": "Hexagonal Binning Density Plot",
+    "difficulty": "Intermediate",
+    "tags": [
+      "Colormap",
+      "Distribution",
+      "Statistical"
+    ],
+    "image": "figures/11.png",
+    "code_file": "code_snippets/11.txt"
+  },
+  {
+    "id": 12,
+    "name": "Annotated Sine and Cosine Plot",
+    "difficulty": "Intermediate",
+    "tags": [
+      "Line",
+      "Multi-line",
+      "Mathematical"
+    ],
+    "image": "figures/12.png",
+    "code_file": "code_snippets/12.txt"
+  },
+  {
+    "id": 13,
+    "name": "Basic Sequential Line Plot",
+    "difficulty": "Beginner",
+    "tags": [
+      "Line"
+    ],
+    "image": "figures/13.png",
+    "code_file": "code_snippets/13.txt"
+  },
+  {
+    "id": 14,
+    "name": "Four Quadrant Multi Chart Layout",
+    "difficulty": "Intermediate",
+    "tags": [
+      "Subplots",
+      "Line",
+      "Scatter",
+      "Bar"
+    ],
+    "image": "figures/14.png",
+    "code_file": "code_snippets/14.txt"
+  },
+  {
+    "id": 15,
+    "name": "One Dimensional Random Walk Time Series",
+    "difficulty": "Beginner",
+    "tags": [
+      "Line",
+      "Time Series",
+      "Statistical"
+    ],
+    "image": "figures/15.png",
+    "code_file": "code_snippets/15.txt"
+  },
+  {
+    "id": 16,
+    "name": "Sine Wave Frequency Comparison",
+    "difficulty": "Beginner",
+    "tags": [
+      "Line",
+      "Multi-line",
+      "Mathematical"
+    ],
+    "image": "figures/16.png",
+    "code_file": "code_snippets/16.txt"
+  },
+  {
+    "id": 17,
+    "name": "Exponential Growth Logarithmic Scale Plot",
+    "difficulty": "Beginner",
+    "tags": [
+      "Line",
+      "Logarithmic",
+      "Mathematical"
+    ],
+    "image": "figures/17.png",
+    "code_file": "code_snippets/17.txt"
+  },
+  {
+    "id": 18,
+    "name": "Solid Line with Circular Markers",
+    "difficulty": "Beginner",
+    "tags": [
+      "Line"
+    ],
+    "image": "figures/18.png",
+    "code_file": "code_snippets/18.txt"
+  },
+  {
+    "id": 19,
+    "name": "Dashed Line with Square Markers",
+    "difficulty": "Beginner",
+    "tags": [
+      "Line"
+    ],
+    "image": "figures/19.png",
+    "code_file": "code_snippets/19.txt"
+  },
+  {
+    "id": 20,
+    "name": "Dotted Line with Triangle Markers",
+    "difficulty": "Beginner",
+    "tags": [
+      "Line"
+    ],
+    "image": "figures/20.png",
+    "code_file": "code_snippets/20.txt"
+  },
+  {
+    "id": 21,
+    "name": "Dash Dot Line with Star Markers",
+    "difficulty": "Beginner",
+    "tags": [
+      "Line"
+    ],
+    "image": "figures/21.png",
+    "code_file": "code_snippets/21.txt"
+  },
+  {
+    "id": 22,
+    "name": "Cyan Colored Vertical Bar Chart",
+    "difficulty": "Beginner",
+    "tags": [
+      "Bar"
+    ],
+    "image": "figures/22.png",
+    "code_file": "code_snippets/22.txt"
+  },
+  {
+    "id": 23,
+    "name": "Magenta Horizontal Bar Chart",
+    "difficulty": "Beginner",
+    "tags": [
+      "Bar"
+    ],
+    "image": "figures/23.png",
+    "code_file": "code_snippets/23.txt"
+  },
+  {
+    "id": 24,
+    "name": "High Resolution Frequency Histogram",
+    "difficulty": "Beginner",
+    "tags": [
+      "Histogram",
+      "Distribution"
+    ],
+    "image": "figures/24.png",
+    "code_file": "code_snippets/24.txt"
+  },
+  {
+    "id": 25,
+    "name": "Normalized Density Distribution Histogram",
+    "difficulty": "Beginner",
+    "tags": [
+      "Histogram",
+      "Distribution",
+      "Statistical"
+    ],
+    "image": "figures/25.png",
+    "code_file": "code_snippets/25.txt"
+  },
+  {
+    "id": 26,
+    "name": "Basic Percentage Pie Chart",
+    "difficulty": "Beginner",
+    "tags": [
+      "Pie"
+    ],
+    "image": "figures/26.png",
+    "code_file": "code_snippets/26.txt"
+  },
+  {
+    "id": 27,
+    "name": "Exploded Segment Shadowed Pie Chart",
+    "difficulty": "Beginner",
+    "tags": [
+      "Pie"
+    ],
+    "image": "figures/27.png",
+    "code_file": "code_snippets/27.txt"
+  },
+  {
+    "id": 28,
+    "name": "Rotated Initial Angle Pie Chart",
+    "difficulty": "Beginner",
+    "tags": [
+      "Pie"
+    ],
+    "image": "figures/28.png",
+    "code_file": "code_snippets/28.txt"
+  },
+  {
+    "id": 29,
+    "name": "Combined Trigonometric Functions Plot",
+    "difficulty": "Beginner",
+    "tags": [
+      "Line",
+      "Multi-line",
+      "Mathematical"
+    ],
+    "image": "figures/29.png",
+    "code_file": "code_snippets/29.txt"
+  },
+  {
+    "id": 30,
+    "name": "Low Alpha Overlapping Scatter Plot",
+    "difficulty": "Beginner",
+    "tags": [
+      "Scatter"
+    ],
+    "image": "figures/30.png",
+    "code_file": "code_snippets/30.txt"
+  },
+  {
+    "id": 31,
+    "name": "Full Opacity Scatter Plot",
+    "difficulty": "Beginner",
+    "tags": [
+      "Scatter"
+    ],
+    "image": "figures/31.png",
+    "code_file": "code_snippets/31.txt"
+  },
+  {
+    "id": 32,
+    "name": "Clipped Range Tangent Function Plot",
+    "difficulty": "Beginner",
+    "tags": [
+      "Line",
+      "Mathematical"
+    ],
+    "image": "figures/32.png",
+    "code_file": "code_snippets/32.txt"
+  },
+  {
+    "id": 33,
+    "name": "Annotated Sine Wave Origin Point",
+    "difficulty": "Intermediate",
+    "tags": [
+      "Line",
+      "Mathematical"
+    ],
+    "image": "figures/33.png",
+    "code_file": "code_snippets/33.txt"
+  },
+  {
+    "id": 34,
+    "name": "Annotated Cosine Wave Peak Point",
+    "difficulty": "Intermediate",
+    "tags": [
+      "Line",
+      "Mathematical"
+    ],
+    "image": "figures/34.png",
+    "code_file": "code_snippets/34.txt"
+  },
+  {
+    "id": 35,
+    "name": "Two By Three Subplot Grid Layout",
+    "difficulty": "Intermediate",
+    "tags": [
+      "Subplots",
+      "Line",
+      "Scatter",
+      "Bar"
+    ],
+    "image": "figures/35.png",
+    "code_file": "code_snippets/35.txt"
+  },
+  {
+    "id": 36,
+    "name": "Dual Frequency Sine Wave Comparison",
+    "difficulty": "Beginner",
+    "tags": [
+      "Line",
+      "Multi-line",
+      "Mathematical"
+    ],
+    "image": "figures/36.png",
+    "code_file": "code_snippets/36.txt"
+  },
+  {
+    "id": 37,
+    "name": "Random Distribution Uniform Scatter Plot",
+    "difficulty": "Beginner",
+    "tags": [
+      "Scatter"
+    ],
+    "image": "figures/37.png",
+    "code_file": "code_snippets/37.txt"
+  },
+  {
+    "id": 38,
+    "name": "Random Normal Distribution Frequency Histogram",
+    "difficulty": "Beginner",
+    "tags": [
+      "Histogram",
+      "Distribution"
+    ],
+    "image": "figures/38.png",
+    "code_file": "code_snippets/38.txt"
+  },
+  {
+    "id": 39,
+    "name": "Exponential Decay Curve Plot",
+    "difficulty": "Beginner",
+    "tags": [
+      "Line",
+      "Mathematical"
+    ],
+    "image": "figures/39.png",
+    "code_file": "code_snippets/39.txt"
+  },
+  {
+    "id": 40,
+    "name": "Sine Plot with Custom Gridlines",
+    "difficulty": "Beginner",
+    "tags": [
+      "Line",
+      "Mathematical"
+    ],
+    "image": "figures/40.png",
+    "code_file": "code_snippets/40.txt"
+  },
+  {
+    "id": 41,
+    "name": "Cosine Line Plot Saved Output",
+    "difficulty": "Beginner",
+    "tags": [
+      "Line",
+      "Mathematical"
+    ],
+    "image": "figures/41.png",
+    "code_file": "code_snippets/41.txt"
+  },
+  {
+    "id": 42,
+    "name": "Simple Dual Category Bar Chart",
+    "difficulty": "Beginner",
+    "tags": [
+      "Bar"
+    ],
+    "image": "figures/42.png",
+    "code_file": "code_snippets/42.txt"
+  },
+  {
+    "id": 43,
+    "name": "Trigonometric Helical 3D Line Plot",
+    "difficulty": "Advanced",
+    "tags": [
+      "3D",
+      "Line",
+      "Mathematical"
+    ],
+    "image": "figures/43.png",
+    "code_file": "code_snippets/43.txt"
+  },
+  {
+    "id": 44,
+    "name": "Random Distribution 3D Scatter Plot",
+    "difficulty": "Advanced",
+    "tags": [
+      "3D",
+      "Scatter",
+      "Colormap"
+    ],
+    "image": "figures/44.png",
+    "code_file": "code_snippets/44.txt"
+  },
+  {
+    "id": 45,
+    "name": "Trigonometric Function 3D Surface Plot",
+    "difficulty": "Advanced",
+    "tags": [
+      "3D",
+      "Surface",
+      "Colormap",
+      "Mathematical"
+    ],
+    "image": "figures/45.png",
+    "code_file": "code_snippets/45.txt"
+  },
+  {
+    "id": 46,
+    "name": "Two Dimensional Geometric Contour Plot",
+    "difficulty": "Advanced",
+    "tags": [
+      "Contour",
+      "Mathematical"
+    ],
+    "image": "figures/46.png",
+    "code_file": "code_snippets/46.txt"
+  },
+  {
+    "id": 47,
+    "name": "Filled Contour Plot with Colorbar",
+    "difficulty": "Advanced",
+    "tags": [
+      "Contour",
+      "Colormap",
+      "Mathematical"
+    ],
+    "image": "figures/47.png",
+    "code_file": "code_snippets/47.txt"
+  },
+  {
+    "id": 48,
+    "name": "Nearest Neighbor Interpolation Matrix Heatmap",
+    "difficulty": "Advanced",
+    "tags": [
+      "Heatmap",
+      "Colormap"
+    ],
+    "image": "figures/48.png",
+    "code_file": "code_snippets/48.txt"
+  },
+  {
+    "id": 49,
+    "name": "Diverging Coolwarm Matrix Heatmap Plot",
+    "difficulty": "Advanced",
+    "tags": [
+      "Heatmap",
+      "Colormap",
+      "Statistical"
+    ],
+    "image": "figures/49.png",
+    "code_file": "code_snippets/49.txt"
+  },
+  {
+    "id": 50,
+    "name": "Three Group Distribution Boxplot Comparison",
+    "difficulty": "Intermediate",
+    "tags": [
+      "Boxplot",
+      "Statistical",
+      "Distribution"
+    ],
+    "image": "figures/50.png",
+    "code_file": "code_snippets/50.txt"
+  },
+  {
+    "id": 51,
+    "name": "Distribution Visualization Violin Plot",
+    "difficulty": "Intermediate",
+    "tags": [
+      "Violin",
+      "Distribution",
+      "Statistical"
+    ],
+    "image": "figures/51.png",
+    "code_file": "code_snippets/51.txt"
+  },
+  {
+    "id": 52,
+    "name": "Customized Format Discrete Stem Plot",
+    "difficulty": "Beginner",
+    "tags": [
+      "Stem"
+    ],
+    "image": "figures/52.png",
+    "code_file": "code_snippets/52.txt"
+  },
+  {
+    "id": 53,
+    "name": "Midpoint Rule Discrete Step Plot",
+    "difficulty": "Beginner",
+    "tags": [
+      "Step",
+      "Mathematical"
+    ],
+    "image": "figures/53.png",
+    "code_file": "code_snippets/53.txt"
+  },
+  {
+    "id": 54,
+    "name": "Two Group Stacked Bar Chart",
+    "difficulty": "Intermediate",
+    "tags": [
+      "Bar"
+    ],
+    "image": "figures/54.png",
+    "code_file": "code_snippets/54.txt"
+  },
+  {
+    "id": 55,
+    "name": "Trigonometric Multi Line Style Comparison",
+    "difficulty": "Beginner",
+    "tags": [
+      "Line",
+      "Multi-line",
+      "Mathematical"
+    ],
+    "image": "figures/55.png",
+    "code_file": "code_snippets/55.txt"
+  },
+  {
+    "id": 56,
+    "name": "Trigonometric Multi Marker Comparison Plot",
+    "difficulty": "Beginner",
+    "tags": [
+      "Line",
+      "Multi-line",
+      "Mathematical"
+    ],
+    "image": "figures/56.png",
+    "code_file": "code_snippets/56.txt"
+  },
+  {
+    "id": 57,
+    "name": "Rainbow Colormap Clustered Scatter Plot",
+    "difficulty": "Intermediate",
+    "tags": [
+      "Scatter",
+      "Colormap",
+      "Statistical"
+    ],
+    "image": "figures/57.png",
+    "code_file": "code_snippets/57.txt"
+  },
+  {
+    "id": 58,
+    "name": "Noisy Signal Sine Time Series",
+    "difficulty": "Beginner",
+    "tags": [
+      "Line",
+      "Time Series",
+      "Statistical"
+    ],
+    "image": "figures/58.png",
+    "code_file": "code_snippets/58.txt"
+  },
+  {
+    "id": 59,
+    "name": "Moving Average Smoothing Line Comparison",
+    "difficulty": "Intermediate",
+    "tags": [
+      "Line",
+      "Multi-line",
+      "Statistical"
+    ],
+    "image": "figures/59.png",
+    "code_file": "code_snippets/59.txt"
+  },
+  {
+    "id": 60,
+    "name": "Cumulative Sum Statistical Tracking Plot",
+    "difficulty": "Beginner",
+    "tags": [
+      "Line",
+      "Statistical"
+    ],
+    "image": "figures/60.png",
+    "code_file": "code_snippets/60.txt"
+  },
+  {
+    "id": 61,
+    "name": "Normalized Normal Distribution Density Histogram",
+    "difficulty": "Beginner",
+    "tags": [
+      "Histogram",
+      "Distribution",
+      "Statistical"
+    ],
+    "image": "figures/61.png",
+    "code_file": "code_snippets/61.txt"
+  },
+  {
+    "id": 62,
+    "name": "Three by Three Random Subplot Grid",
+    "difficulty": "Intermediate",
+    "tags": [
+      "Subplots",
+      "Line"
+    ],
+    "image": "figures/62.png",
+    "code_file": "code_snippets/62.txt"
+  },
+  {
+    "id": 63,
+    "name": "Multiple Point Annotation Sine Plot",
+    "difficulty": "Intermediate",
+    "tags": [
+      "Line",
+      "Mathematical"
+    ],
+    "image": "figures/63.png",
+    "code_file": "code_snippets/63.txt"
+  },
+  {
+    "id": 64,
+    "name": "Dual Axis Logarithmic Scale Plot",
+    "difficulty": "Beginner",
+    "tags": [
+      "Line",
+      "Logarithmic",
+      "Mathematical"
+    ],
+    "image": "figures/64.png",
+    "code_file": "code_snippets/64.txt"
+  },
+  {
+    "id": 65,
+    "name": "Y Axis Semilogarithmic Scale Plot",
+    "difficulty": "Beginner",
+    "tags": [
+      "Line",
+      "Logarithmic",
+      "Mathematical"
+    ],
+    "image": "figures/65.png",
+    "code_file": "code_snippets/65.txt"
+  },
+  {
+    "id": 66,
+    "name": "Sine Curve with Advanced Gridlines",
+    "difficulty": "Beginner",
+    "tags": [
+      "Line",
+      "Mathematical"
+    ],
+    "image": "figures/66.png",
+    "code_file": "code_snippets/66.txt"
+  },
+  {
+    "id": 67,
+    "name": "Multi Line Trigonometric Filled Visualization",
+    "difficulty": "Intermediate",
+    "tags": [
+      "Line",
+      "Multi-line",
+      "Filled",
+      "Mathematical"
+    ],
+    "image": "figures/67.png",
+    "code_file": "code_snippets/67.txt"
+  },
+  {
+    "id": 68,
+    "name": "Financial Stock Price Filled Simulation",
+    "difficulty": "Beginner",
+    "tags": [
+      "Line",
+      "Time Series",
+      "Filled"
+    ],
+    "image": "figures/68.png",
+    "code_file": "code_snippets/68.txt"
+  },
+  {
+    "id": 69,
+    "name": "Stock Price Moving Average Analysis",
+    "difficulty": "Intermediate",
+    "tags": [
+      "Line",
+      "Multi-line",
+      "Time Series",
+      "Statistical"
+    ],
+    "image": "figures/69.png",
+    "code_file": "code_snippets/69.txt"
+  },
+  {
+    "id": 70,
+    "name": "Annual Average Temperature Trend Line",
+    "difficulty": "Beginner",
+    "tags": [
+      "Line",
+      "Time Series"
+    ],
+    "image": "figures/70.png",
+    "code_file": "code_snippets/70.txt"
+  },
+  {
+    "id": 71,
+    "name": "Single Variable Filled Area Plot",
+    "difficulty": "Beginner",
+    "tags": [
+      "Line",
+      "Filled"
+    ],
+    "image": "figures/71.png",
+    "code_file": "code_snippets/71.txt"
+  },
+  {
+    "id": 72,
+    "name": "Daily Activity Distribution Stack Plot",
+    "difficulty": "Intermediate",
+    "tags": [
+      "Filled",
+      "Distribution"
+    ],
+    "image": "figures/72.png",
+    "code_file": "code_snippets/72.txt"
+  },
+  {
+    "id": 73,
+    "name": "Prediction Confidence Interval Error Band",
+    "difficulty": "Intermediate",
+    "tags": [
+      "Line",
+      "Filled",
+      "Error Bars",
+      "Mathematical"
+    ],
+    "image": "figures/73.png",
+    "code_file": "code_snippets/73.txt"
+  },
+  {
+    "id": 74,
+    "name": "Trigonometric Function Polar Coordinate Plot",
+    "difficulty": "Intermediate",
+    "tags": [
+      "Polar",
+      "Mathematical"
+    ],
+    "image": "figures/74.png",
+    "code_file": "code_snippets/74.txt"
+  },
+  {
+    "id": 75,
+    "name": "Programming Skill Metric Radar Chart",
+    "difficulty": "Intermediate",
+    "tags": [
+      "Radar",
+      "Polar",
+      "Filled"
+    ],
+    "image": "figures/75.png",
+    "code_file": "code_snippets/75.txt"
+  },
+  {
+    "id": 76,
+    "name": "Probability Density Distribution Histogram",
+    "difficulty": "Beginner",
+    "tags": [
+      "Histogram",
+      "Distribution",
+      "Statistical"
+    ],
+    "image": "figures/76.png",
+    "code_file": "code_snippets/76.txt"
+  },
+  {
+    "id": 77,
+    "name": "Cumulative Distribution Function Histogram",
+    "difficulty": "Beginner",
+    "tags": [
+      "Histogram",
+      "Distribution",
+      "Statistical"
+    ],
+    "image": "figures/77.png",
+    "code_file": "code_snippets/77.txt"
+  },
+  {
+    "id": 78,
+    "name": "Multidimensional Data Bubble Chart Plot",
+    "difficulty": "Beginner",
+    "tags": [
+      "Scatter",
+      "Bubble"
+    ],
+    "image": "figures/78.png",
+    "code_file": "code_snippets/78.txt"
+  },
+  {
+    "id": 79,
+    "name": "Four Quadrant Commercial Sales Dashboard",
+    "difficulty": "Intermediate",
+    "tags": [
+      "Subplots",
+      "Line",
+      "Bar",
+      "Pie"
+    ],
+    "image": "figures/79.png",
+    "code_file": "code_snippets/79.txt"
+  },
+  {
+    "id": 80,
+    "name": "Study Hours Performance Correlation Scatter",
+    "difficulty": "Beginner",
+    "tags": [
+      "Scatter",
+      "Statistical"
+    ],
+    "image": "figures/80.png",
+    "code_file": "code_snippets/80.txt"
+  },
+  {
+    "id": 81,
+    "name": "Linear Regression Best Fit Line Plot",
+    "difficulty": "Intermediate",
+    "tags": [
+      "Scatter",
+      "Line",
+      "Statistical"
+    ],
+    "image": "figures/81.png",
+    "code_file": "code_snippets/81.txt"
+  },
+  {
+    "id": 82,
+    "name": "Sequential Cumulative Value Waterfall Chart",
+    "difficulty": "Intermediate",
+    "tags": [
+      "Bar",
+      "Statistical"
+    ],
+    "image": "figures/82.png",
+    "code_file": "code_snippets/82.txt"
+  },
+  {
+    "id": 83,
+    "name": "Horizontal Programming Language Popularity Bar",
+    "difficulty": "Beginner",
+    "tags": [
+      "Bar"
+    ],
+    "image": "figures/83.png",
+    "code_file": "code_snippets/83.txt"
+  },
+  {
+    "id": 84,
+    "name": "Two by Two Trigonometric Subplots",
+    "difficulty": "Intermediate",
+    "tags": [
+      "Subplots",
+      "Line",
+      "Mathematical"
+    ],
+    "image": "figures/84.png",
+    "code_file": "code_snippets/84.txt"
+  },
+  {
+    "id": 85,
+    "name": "Temperature and Rainfall Dual Axis Plot",
+    "difficulty": "Intermediate",
+    "tags": [
+      "Subplots",
+      "Line",
+      "Bar",
+      "Time Series"
+    ],
+    "image": "figures/85.png",
+    "code_file": "code_snippets/85.txt"
+  },
+  {
+    "id": 86,
+    "name": "Two Dimensional Vector Field Quiver Plot",
+    "difficulty": "Advanced",
+    "tags": [
+      "Quiver",
+      "Mathematical"
+    ],
+    "image": "figures/86.png",
+    "code_file": "code_snippets/86.txt"
+  },
+  {
+    "id": 87,
+    "name": "Fluid Dynamics Velocity Field Streamline Plot",
+    "difficulty": "Advanced",
+    "tags": [
+      "Stream",
+      "Mathematical"
+    ],
+    "image": "figures/87.png",
+    "code_file": "code_snippets/87.txt"
+  },
+  {
+    "id": 88,
+    "name": "Dynamic Live Sine Wave Line Animation",
+    "difficulty": "Advanced",
+    "tags": [
+      "Animation",
+      "Line",
+      "Mathematical"
+    ],
+    "image": "figures/88.png",
+    "code_file": "code_snippets/88.txt"
+  },
+  {
+    "id": 89,
+    "name": "Project Event Milestones Horizontal Timeline",
+    "difficulty": "Intermediate",
+    "tags": [
+      "Line",
+      "Time Series"
+    ],
+    "image": "figures/89.png",
+    "code_file": "code_snippets/89.txt"
+  },
+  {
+    "id": 90,
+    "name": "Hollow Center Segmented Donut Chart",
+    "difficulty": "Intermediate",
+    "tags": [
+      "Pie"
+    ],
+    "image": "figures/90.png",
+    "code_file": "code_snippets/90.txt"
+  },
+  {
+    "id": 91,
+    "name": "GGPlot Style Sine Wave Plot",
+    "difficulty": "Beginner",
+    "tags": [
+      "Line",
+      "Mathematical"
+    ],
+    "image": "figures/91.png",
+    "code_file": "code_snippets/91.txt"
+  },
+  {
+    "id": 92,
+    "name": "Six Panel Commercial KPI Dashboard",
+    "difficulty": "Intermediate",
+    "tags": [
+      "Subplots",
+      "Line",
+      "Bar",
+      "Pie"
+    ],
+    "image": "figures/92.png",
+    "code_file": "code_snippets/92.txt"
+  }
+]

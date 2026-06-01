@@ -1,0 +1,20 @@
+# NOTE: Please import relevant libraries (e.g., import matplotlib.pyplot as plt, import numpy as np) before running this snippet.
+
+# WATERFALL STYLE GRAPH
+
+values = [100, -20, 30, -10, 50]
+
+cumulative = np.cumsum(values)
+
+plt.figure(figsize=(10,5))
+
+plt.bar(range(len(values)),
+        cumulative,
+        color=['green' if v>0 else 'red'
+               for v in values])
+
+plt.title("Waterfall Style Visualization")
+
+plt.grid(True)
+
+plt.show()

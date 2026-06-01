@@ -1,0 +1,17 @@
+# NOTE: Please import relevant libraries (e.g., import matplotlib.pyplot as plt, import numpy as np) before running this snippet.
+
+x = np.linspace(0, 10, 100)
+y = np.sin(x)
+
+plt.figure()
+plt.plot(x, y)
+plt.annotate("Start", xy=(0,0), xytext=(1,1),
+             arrowprops=dict(arrowstyle="->"))
+plt.annotate("Peak", xy=(1.5,1), xytext=(3,1.5),
+             arrowprops=dict(arrowstyle="->"))
+plt.title("Annotations Demo")
+plt.grid(True)
+plt.show()
+
+
+# LOG SCALE BOTH AXES

@@ -1,0 +1,9 @@
+# NOTE: Please import relevant libraries (e.g., import matplotlib.pyplot as plt, import numpy as np) before running this snippet.
+
+x_sc = np.random.rand(50)*10
+y_sc = np.random.rand(50)*10
+
+plt.figure()
+plt.scatter(x_sc, y_sc, alpha=0.3)
+plt.title("Scatter Low Alpha")
+plt.show()

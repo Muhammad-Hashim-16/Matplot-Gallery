@@ -1,0 +1,20 @@
+# NOTE: Please import relevant libraries (e.g., import matplotlib.pyplot as plt, import numpy as np) before running this snippet.
+
+# BUBBLE CHART
+
+x = np.random.rand(50)
+y = np.random.rand(50)
+sizes = np.random.rand(50) * 2000
+
+plt.figure(figsize=(10,6))
+
+plt.scatter(x,
+            y,
+            s=sizes,
+            alpha=0.5)
+
+plt.title("Bubble Chart")
+
+plt.grid(True)
+
+plt.show()

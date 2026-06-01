@@ -1,0 +1,19 @@
+# NOTE: Please import relevant libraries (e.g., import matplotlib.pyplot as plt, import numpy as np) before running this snippet.
+
+# HORIZONTAL COMPARISON DASHBOARD
+
+languages = ['Python','C++','Java','Rust','Go']
+usage = [95,80,70,50,60]
+
+plt.figure(figsize=(10,5))
+
+plt.barh(languages,
+         usage)
+
+plt.title("Programming Language Popularity")
+
+plt.xlabel("Popularity")
+
+plt.grid(True)
+
+plt.show()

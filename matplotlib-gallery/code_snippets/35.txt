@@ -1,0 +1,37 @@
+# NOTE: Please import relevant libraries (e.g., import matplotlib.pyplot as plt, import numpy as np) before running this snippet.
+
+x = np.linspace(0, 10, 100)
+x_sc = np.random.rand(50)*10
+y_sc = np.random.rand(50)*10
+data2 = np.random.randn(300)
+subjects2 = ["A","B","C","D","E"]
+values = np.random.randint(10,100,5)
+
+fig = plt.figure(figsize=(10,8))
+plt.subplot(2,3,1)
+plt.plot(x, np.sin(x))
+plt.title("1")
+
+plt.subplot(2,3,2)
+plt.plot(x, np.cos(x))
+plt.title("2")
+
+plt.subplot(2,3,3)
+plt.plot(x, np.tan(x))
+plt.ylim(-3,3)
+plt.title("3")
+
+plt.subplot(2,3,4)
+plt.scatter(x_sc, y_sc)
+plt.title("4")
+
+plt.subplot(2,3,5)
+plt.hist(data2)
+plt.title("5")
+
+plt.subplot(2,3,6)
+plt.bar(subjects2, values)
+plt.title("6")
+
+plt.tight_layout()
+plt.show()

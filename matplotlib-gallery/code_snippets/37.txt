@@ -1,0 +1,6 @@
+# NOTE: Please import relevant libraries (e.g., import matplotlib.pyplot as plt, import numpy as np) before running this snippet.
+
+plt.figure()
+plt.scatter(np.random.rand(50), np.random.rand(50), color="green")
+plt.title("Final Scatter")
+plt.show()

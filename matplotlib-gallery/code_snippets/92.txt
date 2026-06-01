@@ -1,0 +1,68 @@
+# NOTE: Please import relevant libraries (e.g., import matplotlib.pyplot as plt, import numpy as np) before running this snippet.
+
+# FINAL PROFESSIONAL DASHBOARD
+
+fig = plt.figure(figsize=(15,10))
+
+# Revenue
+plt.subplot(3,2,1)
+
+revenue = np.cumsum(np.random.randn(50)*10+100)
+
+plt.plot(revenue)
+
+plt.title("Revenue Growth")
+
+# Profit
+plt.subplot(3,2,2)
+
+profit = np.random.randint(20,100,12)
+
+plt.bar(range(12), profit)
+
+plt.title("Monthly Profit")
+
+# Customers
+plt.subplot(3,2,3)
+
+customers = np.random.normal(500,50,500)
+
+plt.hist(customers, bins=25)
+
+plt.title("Customers")
+
+# Market share
+plt.subplot(3,2,4)
+
+share = [35,25,20,20]
+
+plt.pie(share,
+        autopct='%1.1f%%')
+
+plt.title("Market Share")
+
+# Scatter
+plt.subplot(3,2,5)
+
+x = np.random.rand(100)
+
+y = x + np.random.randn(100)*0.1
+
+plt.scatter(x,y)
+
+plt.title("Correlation")
+
+# Area
+plt.subplot(3,2,6)
+
+x = np.arange(20)
+
+y = np.random.randint(10,30,20)
+
+plt.fill_between(x,y,alpha=0.5)
+
+plt.title("Area Trend")
+
+plt.tight_layout()
+
+plt.show()

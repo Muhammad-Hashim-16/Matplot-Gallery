@@ -1,0 +1,9 @@
+# NOTE: Please import relevant libraries (e.g., import matplotlib.pyplot as plt, import numpy as np) before running this snippet.
+
+sizes2 = [25,35,25,15]
+labels2 = ["W","X","Y","Z"]
+
+plt.figure()
+plt.pie(sizes2, labels=labels2, autopct="%1.1f%%")
+plt.title("Pie Variation 1")
+plt.show()

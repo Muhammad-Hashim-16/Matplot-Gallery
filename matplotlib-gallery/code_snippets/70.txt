@@ -1,0 +1,25 @@
+# NOTE: Please import relevant libraries (e.g., import matplotlib.pyplot as plt, import numpy as np) before running this snippet.
+
+# REALISTIC TEMPERATURE ANALYSIS
+
+months = np.arange(1,13)
+
+temperature = [12,15,20,27,34,39,41,39,35,28,20,14]
+
+plt.figure(figsize=(10,5))
+
+plt.plot(months,
+         temperature,
+         marker='o',
+         markersize=8,
+         linewidth=3,
+         color='red')
+
+plt.xticks(months)
+
+plt.title("Average Temperature Through Year")
+plt.xlabel("Month")
+plt.ylabel("Temperature °C")
+
+plt.grid(True)
+plt.show()

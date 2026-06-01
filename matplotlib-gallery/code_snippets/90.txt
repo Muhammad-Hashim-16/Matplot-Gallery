@@ -1,0 +1,15 @@
+# NOTE: Please import relevant libraries (e.g., import matplotlib.pyplot as plt, import numpy as np) before running this snippet.
+
+# ADVANCED PIE DONUT CHART
+
+sizes = [40,30,20,10]
+
+plt.figure(figsize=(7,7))
+
+plt.pie(sizes,
+        wedgeprops=dict(width=0.4),
+        autopct='%1.1f%%')
+
+plt.title("Donut Chart")
+
+plt.show()

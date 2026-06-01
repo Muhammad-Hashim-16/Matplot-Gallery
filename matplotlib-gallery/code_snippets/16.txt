@@ -1,0 +1,11 @@
+# NOTE: Please import relevant libraries (e.g., import matplotlib.pyplot as plt, import numpy as np) before running this snippet.
+
+x = np.linspace(0, 10, 100)
+plt.figure()
+plt.plot(x, np.sin(x), label="sin")
+plt.plot(x, np.sin(2*x), label="sin(2x)")
+plt.plot(x, np.sin(3*x), label="sin(3x)")
+plt.legend()
+plt.title("Frequency Comparison")
+plt.grid(True)
+plt.show()

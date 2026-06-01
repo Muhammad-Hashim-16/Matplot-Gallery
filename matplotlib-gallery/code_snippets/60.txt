@@ -1,0 +1,12 @@
+# NOTE: Please import relevant libraries (e.g., import matplotlib.pyplot as plt, import numpy as np) before running this snippet.
+
+data = np.random.randn(100).cumsum()
+
+plt.figure()
+plt.plot(data)
+plt.title("Cumulative Sum")
+plt.grid(True)
+plt.show()
+
+
+# PROBABILITY DISTRIBUTION VISUALIZATION

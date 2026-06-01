@@ -1,0 +1,10 @@
+# NOTE: Please import relevant libraries (e.g., import matplotlib.pyplot as plt, import numpy as np) before running this snippet.
+
+plt.figure()
+plt.plot(np.sin(np.linspace(0, 10, 100)))
+plt.grid(True, which="both", linestyle="--", linewidth=0.5)
+plt.title("Advanced Grid")
+plt.show()
+
+
+# FINAL MULTI-LAYER PLOT

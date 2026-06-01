@@ -1,0 +1,16 @@
+# NOTE: Please import relevant libraries (e.g., import matplotlib.pyplot as plt, import numpy as np) before running this snippet.
+
+# CUMULATIVE HISTOGRAM
+
+data = np.random.normal(0,1,1000)
+
+plt.figure(figsize=(10,5))
+
+plt.hist(data,
+         bins=40,
+         cumulative=True)
+
+plt.title("Cumulative Distribution")
+plt.grid(True)
+
+plt.show()

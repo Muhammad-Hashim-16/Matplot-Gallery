@@ -1,0 +1,16 @@
+# NOTE: Please import relevant libraries (e.g., import matplotlib.pyplot as plt, import numpy as np) before running this snippet.
+
+# POLAR PLOT
+
+theta = np.linspace(0, 2*np.pi, 100)
+r = np.abs(np.sin(5*theta))
+
+plt.figure(figsize=(7,7))
+
+ax = plt.subplot(111, projection='polar')
+
+ax.plot(theta, r)
+
+ax.set_title("Polar Plot")
+
+plt.show()

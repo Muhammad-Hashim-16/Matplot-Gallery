@@ -1,0 +1,22 @@
+# NOTE: Please import relevant libraries (e.g., import matplotlib.pyplot as plt, import numpy as np) before running this snippet.
+
+# ERROR BAND VISUALIZATION
+
+x = np.linspace(0,10,100)
+y = np.sin(x)
+
+error = 0.2
+
+plt.figure(figsize=(10,5))
+
+plt.plot(x, y, color='blue')
+
+plt.fill_between(x,
+                 y-error,
+                 y+error,
+                 alpha=0.3)
+
+plt.title("Prediction Confidence Interval")
+plt.grid(True)
+
+plt.show()

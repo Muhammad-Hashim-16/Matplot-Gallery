@@ -1,0 +1,24 @@
+# NOTE: Please import relevant libraries (e.g., import matplotlib.pyplot as plt, import numpy as np) before running this snippet.
+
+# ADVANCED SUBPLOT LAYOUT
+
+fig, axes = plt.subplots(2,2, figsize=(12,8))
+
+x = np.linspace(0,10,100)
+
+axes[0,0].plot(x, np.sin(x))
+axes[0,0].set_title("sin")
+
+axes[0,1].plot(x, np.cos(x))
+axes[0,1].set_title("cos")
+
+axes[1,0].plot(x, np.tan(x))
+axes[1,0].set_ylim(-5,5)
+axes[1,0].set_title("tan")
+
+axes[1,1].plot(x, np.exp(-x))
+axes[1,1].set_title("exp decay")
+
+plt.tight_layout()
+
+plt.show()

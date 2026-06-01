@@ -1,0 +1,17 @@
+# NOTE: Please import relevant libraries (e.g., import matplotlib.pyplot as plt, import numpy as np) before running this snippet.
+
+# CUSTOM STYLE GRAPH
+
+plt.style.use('ggplot')
+
+x = np.linspace(0,10,100)
+
+plt.figure(figsize=(10,5))
+
+plt.plot(x,
+         np.sin(x),
+         linewidth=3)
+
+plt.title("GGPlot Style")
+
+plt.show()

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <script>
+        (function() {
+            const theme = localStorage.getItem('matplotgallery-theme') || 'dark';
+            document.documentElement.setAttribute('data-theme', theme);
+        })();
+    </script>
+    <!-- Meta Tags for SEO & Responsiveness -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#6366f1">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="About — MatplotGallery">
+    <meta property="og:description" content="A curated collection of matplotlib visualizations from beginner to advanced — with full source code.">
+    <meta property="og:type" content="website">
+
+    <title>About — MatplotGallery</title>
+
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json">
+
+    <!-- Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css?v=2">
+    
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+</head>
+<body>
+    <!-- MatplotGallery About Page | [ACTION]: Add your name here -->
+    <!-- Navbar -->
+    <nav id="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="logo-area">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="logo-icon"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+                <span class="logo-text">MatplotGallery</span>
+            </a>
+            
+            <div class="nav-controls">
+                <a href="about.html" class="nav-link active"><span class="nav-text">About</span></a>
+                <a href="index.html?search=focus" class="icon-btn" aria-label="Search">
+                    <i data-lucide="search"></i>
+                </a>
+                <a href="https://github.com/Muhammad-Hashim-16" target="_blank" rel="noopener noreferrer" class="icon-btn" aria-label="GitHub Repository">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.2c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                </a>
+                <button id="theme-toggle-btn" class="icon-btn" aria-label="Toggle Theme">
+                    <i data-lucide="sun"></i>
+                </button>
+            </div>
+        </div>
+        <div id="scroll-progress"></div>
+    </nav>
+
+    <main class="about-main">
+        <!-- Hero Section -->
+        <div class="about-hero-simple">
+            <h1 class="about-hero-title">About the Techie</h1>
+            <p class="about-hero-subtitle">The person behind this matplotlib gallery</p>
+        </div>
+
+        <!-- Profile Section -->
+        <section id="profile" class="profile-section">
+            <div class="profile-image-container">
+                <!-- [ACTION]: Add your profile photo named 'profile.jpg' to the project root folder -->
+                <img src="profile.jpg" alt="Profile Photo" class="profile-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+                <div class="profile-placeholder" style="display:none;">
+                    MH
+                </div>
+            </div>
+            
+            <!-- [ACTION]: Replace this text with your full name -->
+            <h2 class="profile-name">Muhammad Hashim</h2>
+            
+            <!-- [ACTION]: Replace with your title e.g. "Data Scientist and Python Developer" -->
+            <p class="profile-title">CS Student and Python Programmer</p>
+            
+            <div class="profile-location">
+                <i data-lucide="map-pin"></i>
+                <!-- [ACTION]: Replace with your city and country e.g. "Karachi, Pakistan" -->
+                <span>Faisalabad, Pakistan</span>
+            </div>
+            
+            <p class="profile-bio">
+                <!-- [ACTION]: Write 2-3 sentences about yourself, your interest in data visualization, and why you built this gallery -->
+                I am a passionate data science with a deep interest in telling stories through data. I built this gallery to share my favorite Matplotlib snippets and provide a structured resource for developers looking to master data visualization in Python.
+            </p>
+            
+            <div class="profile-links-row">
+                <!-- [ACTION]: Add your email address here -->
+                <a href="mailto:muhammadhashimnaeem16@gmail.com" class="profile-link-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg> Email
+                </a>
+                <!-- [ACTION]: Add your LinkedIn URL e.g. https://linkedin.com/in/yourname -->
+                <a href="https://www.linkedin.com/in/muhammad-hashim-naeem-053b6a271" class="profile-link-btn" target="_blank" rel="noopener noreferrer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg> LinkedIn
+                </a>
+                <!-- [ACTION]: Add your GitHub URL e.g. https://github.com/yourusername -->
+                <a href="https://github.com/Muhammad-Hashim-16" class="profile-link-btn" target="_blank" rel="noopener noreferrer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.2c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg> GitHub
+                </a>
+            </div>
+        </section>
+
+        <!-- About This Project Section -->
+        <section id="project-info" class="project-info-section">
+            <h2 class="section-heading">About This Project</h2>
+            <div class="project-card">
+                <div class="stat-row">
+                    <div class="stat-pill"><span id="dynamic-plot-count">90+</span> Plots</div>
+                    <div class="stat-pill">Python 3.14</div>
+                    <div class="stat-pill">Open Source</div>
+                </div>
+                <p class="project-desc">
+                    This gallery was built to serve as a comprehensive reference for matplotlib visualizations. Every plot comes with complete, copy-ready Python 3.14 source code — from simple line charts to complex 3D visualizations.
+                </p>
+                <div class="tech-stack-chips">
+                    <span class="tech-chip">Python 3.14</span>
+                    <span class="tech-chip">Matplotlib</span>
+                    <span class="tech-chip">HTML5</span>
+                    <span class="tech-chip">CSS3</span>
+                    <span class="tech-chip">Vanilla JS</span>
+                    <span class="tech-chip">PWA</span>
+                </div>
+                <a href="index.html" class="primary-btn view-all-btn">View All Plots</a>
+            </div>
+        </section>
+
+        <!-- Skills and Interests Section -->
+        <section id="skills" class="skills-section">
+            <h2 class="section-heading">Interests and Skills</h2>
+            <!-- [ACTION]: Edit the tags list below to match your actual skills and interests -->
+            <div class="skills-cloud">
+                <span class="skill-tag tag-lg">Python</span>
+                <span class="skill-tag tag-md">Data Visualization</span>
+                <span class="skill-tag tag-lg">Machine Learning</span>
+                <span class="skill-tag tag-sm">Matplotlib</span>
+                <span class="skill-tag tag-sm">NumPy</span>
+                <span class="skill-tag tag-md">Pandas</span>
+                <span class="skill-tag tag-lg">Data Science</span>
+                <span class="skill-tag tag-md">Web Development</span>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div>
+                <div class="footer-logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="logo-icon"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+                    MatplotGallery
+                </div>
+                <div class="footer-tagline">A matplotlib visualization gallery built with Python 3.14</div>
+            </div>
+            <div class="footer-links">
+                <a href="about.html" class="footer-link">About</a>
+                <a href="https://github.com/Muhammad-Hashim-16" class="footer-link">GitHub</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>&copy; 2026 Muhammad Hashim</span>
+            <span>Built with Python and Matplotlib</span>
+        </div>
+    </footer>
+
+    <!-- Inline Script for About Page Functionality -->
+    <script>
+        document.addEventListener('DOMContentLoaded', async () => {
+            lucide.createIcons();
+            
+            // Theme setup
+            const themeBtn = document.getElementById('theme-toggle-btn');
+            function updateIcon() {
+                const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+                themeBtn.innerHTML = isDark ? '<i data-lucide="moon"></i>' : '<i data-lucide="sun"></i>';
+                lucide.createIcons();
+            }
+            updateIcon();
+
+            themeBtn.addEventListener('click', () => {
+                const current = document.documentElement.getAttribute('data-theme');
+                const next = current === 'dark' ? 'light' : 'dark';
+                document.body.classList.add('theme-transitioning');
+                document.documentElement.setAttribute('data-theme', next);
+                localStorage.setItem('matplotgallery-theme', next);
+                updateIcon();
+                setTimeout(() => document.body.classList.remove('theme-transitioning'), 350);
+            });
+
+            // Fetch Data for stats
+            try {
+                const res = await fetch('data.json');
+                const plots = await res.json();
+                const plotCountEl = document.getElementById('dynamic-plot-count');
+                if (plotCountEl && plots.length) {
+                    plotCountEl.textContent = plots.length;
+                }
+            } catch(e) {
+                console.log('Could not fetch data for plot stats.');
+            }
+        });
+
+        // Service Worker Reg
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('sw.js').catch(err => {
+                    console.error('SW registration failed: ', err);
+                });
+            });
+        }
+    </script>
+</body>
+</html>

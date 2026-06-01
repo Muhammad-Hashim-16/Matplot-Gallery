@@ -1,0 +1,17 @@
+# NOTE: Please import relevant libraries (e.g., import matplotlib.pyplot as plt, import numpy as np) before running this snippet.
+
+# DENSITY STYLE HISTOGRAM
+
+data = np.random.normal(0,1,1000)
+
+plt.figure(figsize=(10,5))
+
+plt.hist(data,
+         bins=40,
+         density=True,
+         alpha=0.6)
+
+plt.title("Probability Density Histogram")
+plt.grid(True)
+
+plt.show()

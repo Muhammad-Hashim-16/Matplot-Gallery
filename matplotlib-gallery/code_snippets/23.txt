@@ -1,0 +1,9 @@
+# NOTE: Please import relevant libraries (e.g., import matplotlib.pyplot as plt, import numpy as np) before running this snippet.
+
+subjects2 = ["A","B","C","D","E"]
+values = np.random.randint(10,100,5)
+
+plt.figure()
+plt.barh(subjects2, values, color="magenta")
+plt.title("Horizontal Bar")
+plt.show()
