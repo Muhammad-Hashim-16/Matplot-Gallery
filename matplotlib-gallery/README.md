@@ -1,6 +1,6 @@
 # MatplotGallery 📊
 
-A curated gallery of **100+ matplotlib plots** from beginner to advanced level, showcasing the full breadth of Python's most popular data visualization library. Built as a modern Progressive Web App (PWA) with offline support.
+A curated gallery of **90+ matplotlib plots** from beginner to advanced level, showcasing the full breadth of Python's most popular data visualization library. Built as a modern Progressive Web App (PWA) with offline support.
 
 ![Python](https://img.shields.io/badge/Python-3.14-blue?logo=python&logoColor=white)
 ![Matplotlib](https://img.shields.io/badge/Matplotlib-Latest-orange?logo=python&logoColor=white)
