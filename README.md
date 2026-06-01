@@ -64,20 +64,6 @@ You must serve it over a local server:
 
 ---
 
-## 🚀 Deploying to Vercel
-
-Deployment is 100% free and takes 30 seconds.
-
-1. Push this entire repository to your GitHub account.
-2. Log into [Vercel](https://vercel.com/) and click **Add New Project**.
-3. Import this repository.
-4. **CRITICAL STEP:** In the Vercel project settings, set the **Root Directory** to `matplotlib-gallery`.
-5. Leave the build command blank and click **Deploy**!
-
-Anytime you run `splitter.py` to generate new plots, just `git push` your changes, and Vercel will instantly update your live gallery!
-
----
-
 ## 📁 Project Architecture
 
 ```text
