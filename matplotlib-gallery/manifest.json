@@ -60,5 +60,17 @@
       "purpose": "any"
     }
   ],
-  "screenshots": []
+  "screenshots": [
+    {
+      "src": "icons/screenshot-wide.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide"
+    },
+    {
+      "src": "icons/screenshot-portrait.png",
+      "sizes": "540x720",
+      "type": "image/png"
+    }
+  ]
 }
