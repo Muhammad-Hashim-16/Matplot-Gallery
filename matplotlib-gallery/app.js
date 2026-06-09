@@ -639,6 +639,14 @@ function setupCopyCode() {
     });
 }
 
+const navSearchBtn = document.getElementById('nav-search-btn');
+if (navSearchBtn) {
+    navSearchBtn.addEventListener('click', () => {
+        const searchInput = document.getElementById('search-input');
+        if (searchInput) searchInput.focus();
+    });
+}
+
 function showToast(message, type = 'success') {
     const toast = document.getElementById('toast');
     if (!toast) return;
