@@ -92,4 +92,4 @@ Project Matplotlib/
 ## 👤 Author
 
 Created by **Muhammad Hashim**, CS Student and Python Programmer from Faisalabad, Pakistan.
-Check out my [GitHub](https://github.com/Muhammad-Hashim-16) or connect with me on [LinkedIn](https://www.linkedin.com/in/muhammad-hashim-naeem-053b6a271).
+Check out my [GitHub](https://github.com/Muhammad-Hashim-16) or connect with me on [LinkedIn](https://www.linkedin.com/in/muhammad-hashim-naeem).
